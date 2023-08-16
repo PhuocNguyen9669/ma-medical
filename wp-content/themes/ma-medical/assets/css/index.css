@@ -1,0 +1,2936 @@
+@charset "utf-8";
+
+/***************************************************************************
+*
+* INDEX STYLE
+*
+***************************************************************************/
+
+
+/* MAIN */
+
+#main {
+    margin-top: 0;
+}
+
+#main .mainImage img {
+    width: 100%;
+    height: 750px;
+    object-fit: cover;
+}
+
+
+/* areaWorries */
+
+.areaWorries {
+    position: relative;
+    background: #bcdcf8;
+    padding: 64px 0 0;
+    min-height: 722px;
+}
+
+.areaWorries::after {
+    position: absolute;
+    content: "";
+    border-top: 65px solid #bcdcf8;
+    border-right: 55px solid transparent;
+    border-bottom: 65px solid transparent;
+    border-left: 59px solid transparent;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    bottom: -191px;
+    z-index: 9;
+}
+
+.areaWorries .titleWorries {
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.65;
+    letter-spacing: 4.2px;
+    padding-left: 21px;
+}
+
+.areaWorries .listWorries {
+    position: relative;
+}
+
+.areaWorries .listWorries li {
+    position: absolute;
+    font-size: 17px;
+    color: #0076c7;
+    background-size: 100% 100%;
+    line-height: 1.7;
+    letter-spacing: 0.8px;
+}
+
+.areaWorries .listWorries li .textList {
+    position: relative;
+    background: #fff;
+    padding: 22px 32px 28px;
+    border-radius: 5px;
+}
+
+.areaWorries .listWorries li .textList::after {
+    position: absolute;
+    content: "";
+    background: url(../images/index/bg-worries-right.png) no-repeat;
+    background-size: 100% 100%;
+    width: 38px;
+    height: 19px;
+    bottom: -18px;
+    transform: translateX(-50%);
+    left: 47%;
+}
+
+.areaWorries .listWorries li.listOne {
+    width: 22.9%;
+    left: 22.4%;
+    top: 42px;
+    transform: translateX(-50%);
+}
+
+.areaWorries .listWorries li.listTwo {
+    width: 29.3%;
+    left: 50.7%;
+    top: 74px;
+    transform: translateX(-50%);
+}
+
+.areaWorries .listWorries li.listThree {
+    width: 32.6%;
+    left: 17.9%;
+    top: 215px;
+    transform: translateX(-50%);
+}
+
+.areaWorries .listWorries li.listFour {
+    width: 27.3%;
+    left: unset;
+    top: 37px;
+    right: -8%;
+    transform: translateX(-50%);
+}
+
+.areaWorries .listWorries li.listFive {
+    width: 31.8%;
+    left: unset;
+    top: 217px;
+    right: -14.9%;
+    transform: translateX(-50%);
+}
+
+.areaWorries .listWorries li.listTwo .textList {
+    padding: 28px 0px 37px 32px;
+}
+
+.areaWorries .listWorries li.listThree .textList {
+    padding: 46px 0px 49px 29px;
+}
+
+.areaWorries .listWorries li.listFour .textList {
+    padding: 22px 20px 31px 30px;
+}
+
+.areaWorries .listWorries li.listFive .textList {
+    padding: 30px 17px 36px 35px;
+}
+
+.areaWorries .listWorries li.listTwo .textList::after {
+    width: 55px;
+    height: 26px;
+    bottom: -25px;
+    left: 48%;
+}
+
+.areaWorries .listWorries li.listThree .textList::after {
+    width: 48px;
+    height: 25px;
+    bottom: -24px;
+    left: 53%;
+}
+
+.areaWorries .listWorries li.listFour .textList::after {
+    width: 24px;
+    height: 21px;
+    bottom: -30px;
+    left: 31%;
+    background-size: 100% 100%;
+    transform: scaleX(-1.5) translate(-50%, -50%);
+}
+
+.areaWorries .listWorries li.listFive .textList::after {
+    width: 32px;
+    height: 26px;
+    bottom: -37px;
+    left: 32%;
+    background-size: 100% 100%;
+    transform: scaleX(-1.5) translate(-50%, -50%);
+}
+
+.areaWorries .listWorries li .dot {
+    letter-spacing: -7px;
+    margin-left: -3px;
+}
+
+.areaWorries .imageWorries {
+    padding: 266px 14px 0 0;
+    text-align: center;
+}
+
+
+/* areaService */
+
+.areaService {
+    margin-bottom: 168px;
+}
+
+.areaService .area .areaTitle {
+    margin-bottom: 103px;
+}
+
+
+/* Common Area */
+
+.areaService .area {
+    position: relative;
+    background: #fdf8f0;
+    padding: 67px 0 71px;
+}
+
+.areaService .area::before {
+    position: absolute;
+    content: "";
+    background: #dceefc;
+    right: 0;
+    top: 0;
+    width: 16.75%;
+    height: 100%;
+}
+
+
+/* Common Area */
+
+.areaService .area .service {
+    position: relative;
+    font-size: 32px;
+    padding-left: 37px;
+    letter-spacing: 0.2px;
+}
+
+.areaService .area .service .smDes {
+    font-size: 22px;
+    display: inline-block;
+}
+
+.areaService .area .service:before {
+    position: absolute;
+    content: "";
+    top: 5px;
+    left: 10px;
+    background: #1133ae;
+    width: 10px;
+    height: 95%;
+    left: 2px;
+}
+
+
+/* Service Area */
+
+.contentService {
+    position: relative;
+    margin: -55px 0 168px;
+}
+
+.areaService .imageService {
+    margin-bottom: 23px;
+}
+
+.areaService .imageService img {
+    width: 100%;
+}
+
+.areaService .textContent {
+    font-size: 18px;
+    line-height: 1.76;
+    margin-bottom: 57px;
+}
+
+.areaService .textContent .textBlue {
+    color: #1133ae;
+}
+
+
+/* areaDifferent */
+
+.areaDifferent {
+    margin-bottom: 75px;
+}
+
+.areaDifferent .areaTitleLead {
+    padding-left: 4px;
+    letter-spacing: 0.6px;
+    margin-bottom: 31px;
+}
+
+.areaDifferent .desTitle {
+    font-size: 24px;
+    color: #1133ae;
+    padding-left: 4px;
+    letter-spacing: 0.6px;
+    margin-bottom: 8px;
+}
+
+.areaDifferent .desTitle .dotTitle {
+    font-size: 37px;
+    margin-right: 1px;
+}
+
+.areaDifferent .desText {
+    line-height: 1.78;
+    padding-left: 4px;
+    margin-top: 0;
+    font-size: 18px;
+}
+
+.areaDifferent .textContent {
+    padding-left: 4px;
+    margin: 19px 0 59px;
+}
+
+.areaDifferent .listDifferent {
+    display: flex;
+    position: relative;
+    padding-left: 8px;
+    margin: 42px 0 45px;
+}
+
+.areaDifferent .listDifferent li {
+    width: calc(100% / 2 - 28px);
+    margin-right: 51px;
+}
+
+.areaDifferent .listDifferent li:first-child::after {
+    position: absolute;
+    content: "";
+    background: url(../images/index/arrow-different.svg) no-repeat;
+    width: 28px;
+    height: 74px;
+    left: 51.1%;
+    top: 54.4%;
+    transform: translate(-50%, -50%);
+}
+
+.areaDifferent .listDifferent li:last-child {
+    margin-right: 0;
+}
+
+.areaDifferent .listDifferent li img {
+    width: 100%;
+}
+
+
+/* blockDoctor */
+
+.areaDoctor {
+    margin-bottom: 101px;
+}
+
+.blockDoctor {
+    background: #e9f7fb;
+    border-radius: 24.8px;
+    padding: 53px 41px 46px 44px;
+}
+
+.blockDoctor .areaTitleLead {
+    text-align: center;
+    padding: 0 0 19px 0;
+    margin-bottom: 46px;
+}
+
+.blockDoctor .areaTitleLead::before {
+    left: 50.6%;
+    transform: translate(-50%, -50%);
+}
+
+.blockDoctor .listDoctor {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.blockDoctor .listDoctor img {
+    width: 100%;
+    border-radius: 9.5px;
+}
+
+.blockDoctor .listDoctor .imageDoctor {
+    margin-bottom: 22px;
+}
+
+.blockDoctor .listDoctor li {
+    width: calc(100% / 2 - 26px);
+    margin: 0 51px 60px 0;
+}
+
+.blockDoctor .listDoctor li.last {
+    margin-bottom: 37px;
+}
+
+.blockDoctor .listDoctor li:nth-child(2n) {
+    margin-right: 0;
+}
+
+.blockDoctor .listDoctor .textDoctor {
+    font-size: 16px;
+    line-height: 1.75;
+}
+
+.blockDoctor .acceptBlock {
+    background: #fff;
+    padding: 32px 30px 51px 32px;
+    border-radius: 18px;
+    margin-right: 7px;
+}
+
+.blockDoctor .acceptBlock .titleAccept {
+    font-size: 23px;
+    color: #1133ae;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.blockDoctor .acceptBlock .listAccept {
+    font-size: 16px;
+    padding-left: 35px;
+}
+
+.blockDoctor .acceptBlock .listAccept li {
+    position: relative;
+    margin-bottom: 8px;
+}
+
+.blockDoctor .acceptBlock .listAccept li:last-child {
+    margin-bottom: 0;
+}
+
+.blockDoctor .acceptBlock .listAccept li::before {
+    position: absolute;
+    content: "●";
+    font-size: 32px;
+    left: -21px;
+    top: -15px;
+    color: #3d3938;
+}
+
+
+/* areaDiseases */
+
+.areaDiseases .listDiseases {
+    display: flex;
+    background: #fdf8f0;
+    margin-top: 28px;
+    padding: 33px 31px 31px;
+    border-radius: 20px;
+    margin-bottom: 77px;
+}
+
+.areaDiseases .listDiseases>li {
+    width: calc(100% / 3);
+    margin-right: 10px;
+}
+
+.areaDiseases .listDiseases>li:last-child {
+    margin-right: 0;
+}
+
+.areaDiseases .detailsList li {
+    font-size: 18px;
+    margin-bottom: 4px;
+}
+
+.areaDiseases .detailsList li.space {
+    margin-bottom: 35px;
+}
+
+.areaDiseases .detailsList li:last-child {
+    margin-bottom: 0;
+}
+
+
+/* areaBtn */
+
+.btnService {
+    display: block;
+    font-size: 29px;
+    width: 775px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.btnService.last {
+    margin-bottom: 0;
+}
+
+.btnService a {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    color: #fff;
+    background: #1133ae;
+    padding: 18px 0px 11px 47px;
+    border-radius: 12px;
+    letter-spacing: 3.2px;
+    font-weight: bold;
+}
+
+.btnService:last-child a {
+    background: #f26666;
+    letter-spacing: 2px;
+    font-size: 32px;
+    padding: 12px 0px 12px 62px;
+}
+
+.btnService:last-child a::before {
+    background: url(../images/index/icon-btn-2.png) no-repeat;
+    left: 30.1%;
+    top: 18px;
+}
+
+.btnService a::before {
+    position: absolute;
+    content: "";
+    background: url(../images/index/icon-btn.png) no-repeat;
+    width: 49px;
+    height: 50px;
+    background-size: 100%;
+    left: 31.8%;
+    top: 11px;
+}
+
+.areaService .area.consultation {
+    padding: 53px 0 131px;
+}
+
+.areaService .area.consultation .service {
+    font-size: 36px;
+    letter-spacing: 1.5px;
+}
+
+
+/* contentDoctor */
+
+.contentDoctor .areaOpinion {
+    position: relative;
+    margin-top: -115px;
+}
+
+.contentDoctor .textContent {
+    margin-bottom: 41px;
+}
+
+.contentDoctor .blockDoctor {
+    padding-bottom: 50px;
+    margin-bottom: 0;
+}
+
+.contentDoctor .blockDoctor .listDoctor li {
+    margin: 0 51px 25px 0;
+}
+
+.contentDoctor .blockDoctor .listDoctor li:nth-child(2n) {
+    margin-right: 0;
+}
+
+.contentDoctor .blockDoctor .listDoctor li.last {
+    margin-bottom: 0;
+}
+
+.contentDoctor .areaDoctor {
+    margin-bottom: 65px;
+}
+
+
+/*tan*/
+
+.photoMain {
+    width: 900px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+.photoMain img {
+    width: 100%;
+}
+
+.titleSub {
+    font-size: 36px;
+}
+
+.area {
+    position: relative;
+    background: #fdf8f0;
+    padding: 107px 0;
+}
+
+.area::before {
+    position: absolute;
+    content: "";
+    background: #dceefc;
+    right: 0;
+    top: 0;
+    width: 16.75%;
+    height: 100%;
+}
+
+.area .service {
+    position: relative;
+    font-size: 32px;
+    padding-left: 37px;
+}
+
+.area .service:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 2px;
+    background: #1133ae;
+    width: 10px;
+    height: 95%;
+}
+
+.area .service span {
+    display: block;
+}
+
+.area .service .serviceContent {
+    display: inline-block;
+    font-size: 24px;
+    color: #fff;
+    background: #dd7f49;
+    border-radius: 5px;
+    padding: 1px 13px;
+    margin-left: 3px;
+}
+
+
+/* areaProcedure */
+
+.areaProcedure .area {
+    padding: 70px 0 76px;
+}
+
+.procedureDetails .photoMain {
+    margin-bottom: 141px;
+}
+
+.areaProcedure .areaTitle {
+    margin-bottom: 98px;
+}
+
+.areaProcedure .procedureDetails {
+    position: relative;
+    margin-top: -45px;
+}
+
+.areaProcedure .procedureFrames {
+    position: relative;
+    border-left: 3px solid #69b5ef;
+    margin-left: 55px;
+    padding-left: 82px;
+}
+
+.areaProcedure .procedureFrames .number {
+    position: absolute;
+    top: -38px;
+    left: -140px;
+    background: #fff url(../images/index/voice-bcr.png) no-repeat;
+    width: 116px;
+    height: 115px;
+    background-size: 100%;
+    font-size: 74px;
+    color: #1133ae;
+    text-align: center;
+    padding-left: 16px;
+    border-radius: 50%;
+    letter-spacing: 5.4px;
+}
+
+.iOS .areaProcedure .procedureFrames .number {
+    line-height: 1.75;
+}
+
+.areaProcedure .procedureFrames .procedureMain {
+    margin-bottom: 111px;
+}
+
+.areaProcedure .procedureMain .procedureTitle {
+    position: relative;
+    font-size: 27px;
+    color: #1133ae;
+    margin-bottom: 47px;
+    padding-left: 3px;
+}
+
+.areaProcedure .procedureMain .procedureContent {
+    margin-bottom: 50px;
+}
+
+.areaProcedure .procedureTest {
+    font-size: 16px;
+    margin-bottom: 2px;
+    line-height: 1.7;
+    text-indent: -17px;
+    padding-left: 18px;
+}
+
+.areaProcedure .procedureContent .example {
+    text-indent: -23px;
+    padding-left: 22px;
+    margin-left: 7px;
+    margin-top: 30px;
+    font-size: 16px;
+}
+
+.areaProcedure .procedureTest span {
+    position: relative;
+    color: #000;
+    font-weight: bold;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 51%, rgba(255, 249, 233, 1) 51%, rgba(255, 241, 205, 1) 100%) no-repeat;
+}
+
+.areaProcedure .serviceBank {
+    margin: 48px 0 18px;
+}
+
+.areaProcedure .serviceBank .boxTitle {
+    margin-left: 8px;
+    margin-bottom: 17px;
+}
+
+.areaProcedure .procedureMain .procedureRegistration {
+    display: inline-block;
+    width: 317px;
+    margin-left: 2px;
+}
+
+.areaProcedure .procedureMain .procedureRegistration a {
+    position: relative;
+    display: block;
+    font-size: 23px;
+    color: #fff;
+    background: #f26666;
+    text-align: center;
+    border-radius: 7px;
+    padding: 32px 0 30px 50px;
+    font-weight: bold;
+}
+
+.areaProcedure .procedureMain .procedureRegistration a:before {
+    content: "";
+    position: absolute;
+    top: 51%;
+    left: 28px;
+    transform: translateY(-50%);
+    background: url(../images/index/icon-registration.svg) no-repeat;
+    width: 36px;
+    height: 29px;
+}
+
+.areaProcedure .procedureMain .procedureLink {
+    padding-top: 12px;
+    margin-bottom: 77px;
+}
+
+.areaProcedure .procedureMain .procedureLink li {
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+.areaProcedure .procedureMain .procedureLink a {
+    position: relative;
+    font-size: 16px;
+    color: #0076c7;
+    font-weight: 600;
+    border-bottom: 1px solid #0076c7;
+    padding-bottom: 4px;
+}
+
+.areaProcedure .procedureMain .procedureLink a:before {
+    content: "";
+    position: absolute;
+    top: 61%;
+    left: -16px;
+    transform: translateY(-50%);
+    border-top: 7px solid transparent;
+    border-left: 8px solid #0076c7;
+    border-bottom: 8px solid transparent;
+}
+
+.areaProcedure .procedureMain .procedureBox {
+    background: #e9f7fb;
+    border-radius: 12px;
+    margin-left: 4px;
+    padding: 51px 32px 35px;
+}
+
+.areaProcedure .procedureMain .procedureBox.cancel {
+    display: flex;
+    justify-content: space-between;
+    padding: 41px 34px 25px 33px;
+}
+
+.areaProcedure .procedureMain .procedureBox.card {
+    padding: 25px 34px 25px 33px;
+    border-radius: 8px;
+}
+
+.areaProcedure .procedureMain .procedureBox.card .cardTitle {
+    position: relative;
+    font-size: 15px;
+    padding-left: 20px;
+    margin-bottom: 17px;
+}
+
+.areaProcedure .procedureMain .procedureBox.card .cardTitle:before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 1px;
+    background: #69b5ef;
+    border-radius: 50%;
+    width: 14px;
+    height: 14px;
+}
+
+.areaProcedure .procedureMain .boxTitle {
+    position: relative;
+    font-size: 23px;
+    margin-bottom: 17px;
+    padding-left: 22px;
+}
+
+.areaProcedure .procedureMain .boxTitle:before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 0;
+    background: #0076c7;
+    width: 4px;
+    height: 27px;
+}
+
+.areaProcedure .procedureMain .procedurePhone {
+    margin-top: -17px;
+}
+
+.areaProcedure .procedurePhone .phoneTitle {
+    font-size: 10px;
+    margin-left: -42px;
+    letter-spacing: 1.2px;
+}
+
+.areaProcedure .procedurePhone .phoneTitle span {
+    font-size: 15px;
+}
+
+.areaProcedure .procedurePhone .numberPhone a {
+    position: relative;
+    font-size: 31px;
+    color: #191919;
+    font-weight: bold;
+    letter-spacing: 6px;
+}
+
+.areaProcedure .procedurePhone .numberPhone a:before {
+    content: "";
+    position: absolute;
+    top: 54%;
+    left: -39px;
+    transform: translateY(-50%);
+    background: url(../images/index/icon-phone.svg) no-repeat;
+    background-size: 100%;
+    width: 23px;
+    height: 23px;
+}
+
+.areaProcedure .procedureBox .listCard {
+    display: flex;
+    align-items: center;
+    margin-left: -6px;
+}
+
+.areaProcedure .procedureBox .listCard .cardVisa {
+    margin-top: 8px;
+}
+
+.areaProcedure .procedureBox .listCard li {
+    margin-right: 14.4px;
+}
+
+.areaProcedure .procedureBox .procedureIntroduce {
+    font-size: 16px;
+    padding: 7px 13px;
+    line-height: 1.7;
+    margin-bottom: 12px;
+}
+
+.areaProcedure .procedureBox .boxPink {
+    background: #fdf8f0;
+    margin: 0 14px;
+    border-radius: 13px;
+    padding: 33px 59px 40px;
+    margin-bottom: 46px;
+}
+
+.areaProcedure .procedureBox .pinkDeails {
+    margin-bottom: 61px;
+}
+
+.areaProcedure .procedureBox .pinkDeails:last-child {
+    margin-bottom: 0;
+}
+
+.areaProcedure .boxPink .pinkTitle {
+    position: relative;
+    font-size: 22px;
+    margin-bottom: 28px;
+}
+
+.areaProcedure .boxPink .pinkTitle:before {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: -23px;
+    background: #69b5ef;
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+}
+
+.areaProcedure .boxPink .pinkCheckBox {
+    position: relative;
+    font-size: 18px;
+    padding-left: 35px;
+    margin-bottom: 17px;
+    font-weight: bold;
+}
+
+.areaProcedure .boxPink .pinkCheckBox:before {
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: 2px;
+    background: url(../images/index/icon-check-box.svg) no-repeat;
+    background-size: 100%;
+    width: 26px;
+    height: 24px;
+}
+
+.areaProcedure .boxPink .pinkCheckBox span {
+    display: inline-block;
+}
+
+.areaProcedure .boxPink .pinkCheckBox span a {
+    position: relative;
+    font-size: 14px;
+    color: #fff;
+    background: #69b5ef;
+    border-radius: 5px;
+    margin-left: 11px;
+    padding: 3px 12px 4px 25px;
+    letter-spacing: 0;
+}
+
+.areaProcedure .boxPink .pinkCheckBox span a:before {
+    content: "";
+    position: absolute;
+    top: 51%;
+    left: 7px;
+    transform: translateY(-50%);
+    background: url(../images/index/icon-path.svg) no-repeat;
+    background-size: 100%;
+    width: 13px;
+    height: 13px;
+}
+
+.areaProcedure .boxPink .addPdl {
+    padding-left: 46px;
+}
+
+.areaProcedure .boxPink .pinkNone {
+    font-size: 16px;
+    padding-top: 17px;
+    margin-bottom: 25px;
+}
+
+.areaProcedure .specifically {
+    margin-top: -7px;
+    padding-left: 41px;
+    margin-bottom: 43px;
+}
+
+.areaProcedure .specifically .specificallyNote {
+    font-size: 16px;
+    text-indent: -14px;
+    padding-left: 22px;
+    margin-bottom: 15px;
+}
+
+.areaProcedure .specifically .specificallyText {
+    font-size: 16px;
+    padding-left: 17px;
+    text-indent: -17px;
+    line-height: 1.56;
+}
+
+.areaProcedure .location .locationInfor {
+    margin-left: 13px;
+    margin-bottom: 3.9px;
+}
+
+.areaProcedure .location .locationInfor a {
+    color: #555555;
+}
+
+.areaProcedure .locationNote {
+    font-size: 16px;
+    text-indent: -12px;
+    line-height: 1.74;
+}
+
+.areaProcedure .procedureMain.sendMail .boxTitle {
+    margin-bottom: 42px;
+}
+
+.areaProcedure .mainlTutorial {
+    margin-left: 5px;
+    font-size: 16px;
+    line-height: 1.9;
+    margin-bottom: 50px;
+}
+
+.areaProcedure .procedureSoftware {
+    display: flex;
+    padding-left: 5px;
+    margin-bottom: 49px;
+}
+
+.areaProcedure .softwareContent {
+    width: 46.4%;
+    margin-right: 14px;
+}
+
+.areaProcedure .softwarePhoto {
+    width: 49.2%;
+    margin-top: 6px;
+}
+
+.areaProcedure .softwarePhoto img {
+    width: 100%;
+}
+
+.areaProcedure .procedureBox .softwareText {
+    font-size: 16px;
+    line-height: 1.75;
+    margin-bottom: 34px;
+}
+
+.areaProcedure .procedureBox .textSub {
+    margin-left: 12px;
+    margin-bottom: 0;
+}
+
+.areaProcedure .softwareLink {
+    padding-left: 32px;
+}
+
+.areaProcedure .softwareLink .softwareZoom {
+    margin-bottom: 18px;
+}
+
+.areaProcedure .softwareLink .softwareInstall a {
+    position: relative;
+    font-size: 16px;
+    font-weight: 600;
+    color: #555555;
+    padding-left: 28px;
+}
+
+.areaProcedure .softwareLink .softwareInstall a:before {
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: -4px;
+    background: url(../images/index/icon-link.svg) no-repeat;
+    background-size: 100%;
+    width: 24px;
+    height: 24px;
+}
+
+.areaProcedure .procedureFrames .sendMail {
+    position: relative;
+}
+
+.areaProcedure .procedureFrames .sendMail:before {
+    content: "";
+    position: absolute;
+    background: #fff;
+    width: 3px;
+    height: 100%;
+    top: 0;
+    left: -85px;
+}
+
+
+/* areaFlow */
+
+.areaFlow {
+    margin-bottom: 178px;
+}
+
+.areaFlow .area {
+    padding: 60px 0 76px;
+}
+
+.areaFlow .areaProcedure {
+    margin: -47px 0 0;
+}
+
+.areaFlow .areaProcedure .imageFlow {
+    position: relative;
+    margin-bottom: 124px;
+}
+
+.areaFlow .contentFlow .imageFlow img {
+    width: 100%;
+}
+
+.areaFlow .areaProcedure .procedureMain .procedureContent {
+    margin-bottom: 31px;
+}
+
+.areaFlow .areaProcedure .procedureMain .procedureRegistration a {
+    padding: 20px 0 21px 88px;
+    line-height: 1.2;
+    font-weight: bold;
+    letter-spacing: 1.4px;
+    text-align: left;
+}
+
+.areaFlow .areaProcedure .procedureFrames .procedureMain {
+    margin-bottom: 113px;
+}
+
+.areaFlow .areaProcedure .procedureFrames .procedureMain:last-child {
+    margin-bottom: 0;
+}
+
+.areaFlow .areaProcedure .procedureMain .procedureLink {
+    padding-top: 2px;
+    margin-bottom: 0;
+}
+
+.areaFlow .areaProcedure .procedureContent .procedureImage {
+    margin-top: 26px;
+    padding-left: 3px;
+}
+
+
+/* areaPrice */
+
+.areaPrice {
+    margin-bottom: 187px;
+}
+
+.areaPrice .area {
+    padding: 68px 0 103px;
+}
+
+.areaPrice .priceContent {
+    margin-top: -74px;
+    position: relative;
+}
+
+
+/* areaFrames */
+
+.areaFrames {
+    border: 7px solid #1133ae;
+    border-radius: 17px;
+    background: #fff;
+    padding: 28px 18px 24px;
+    margin-bottom: 28px;
+}
+
+.areaFrames .framesContent {
+    display: flex;
+    justify-content: space-between;
+}
+
+.areaFrames .framesLeft {
+    text-align: center;
+    border-right: 1px solid #1133ae;
+    padding-top: 20px;
+    width: 32.2%;
+    padding-right: 21px;
+}
+
+.areaFrames .framesLeft .framesTitle {
+    font-size: 28px;
+    color: #1133ae;
+}
+
+.areaFrames .framesLeft .framesBtn {
+    display: inline-block;
+    margin-top: 28px;
+    width: 229px;
+}
+
+.areaFrames .framesLeft .framesBtn a {
+    position: relative;
+    display: block;
+    font-size: 16px;
+    color: #fff;
+    background: #1133ae;
+    padding: 18px 0px 23px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.areaFrames .framesLeft .framesBtn a span {
+    margin-left: 30px;
+}
+
+.areaFrames .framesLeft .framesBtn a:before {
+    content: "";
+    position: absolute;
+    top: 49%;
+    left: 14px;
+    transform: translateY(-50%);
+    background: url(../images/index/icon-report.svg) no-repeat;
+    width: 37px;
+    height: 45px;
+}
+
+.areaFrames .framesRight {
+    width: calc(100% - 38%);
+    padding-top: 15px;
+}
+
+.areaFrames .framesRight .framesDetail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.areaFrames .framesDetail .framesInformation {
+    font-size: 16px;
+    padding-top: 1px;
+    font-weight: 600;
+}
+
+.areaFrames .framesDetail .framesPrice {
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 1.4;
+}
+
+.areaFrames .framesDetail .framesPrice span {
+    font-size: 16px;
+    color: #231815;
+}
+
+.areaFrames .framesDetail .framesPrice .priceDes {
+    font-size: 24px;
+    color: #555;
+}
+
+.areaFrames.oneRow {
+    position: relative;
+    border: none;
+    padding: 41px 0 4px;
+    margin: 34px 0 0;
+}
+
+.areaFrames.oneRow::before {
+    position: absolute;
+    content: "";
+    background: #1133ae;
+    height: 6px;
+    width: 99.3%;
+    border-radius: 5px;
+    top: 0;
+}
+
+.areaFrames.oneRow::after {
+    position: absolute;
+    content: "";
+    background: url(../images/index/icon-add.svg) no-repeat;
+    width: 79px;
+    height: 79px;
+    top: -33.5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.areaFrames.oneRow .framesLeft {
+    padding-top: 11px;
+}
+
+.areaFrames.oneRow .framesDetail .framesPrice {
+    width: 100%;
+    text-align: right;
+}
+
+.areaFrames.oneRow .framesRight {
+    padding-top: 0;
+}
+
+.areaFrames .framesText {
+    font-size: 16px;
+    margin: 42px 0 18px;
+    padding-left: 61px;
+    font-weight: 600;
+}
+
+
+/* pricePrepaid */
+
+.pricePrepaid {
+    text-align: center;
+    margin-bottom: 34px;
+}
+
+.pricePrepaid .prepaidBtn {
+    display: inline-block;
+    margin-bottom: 17px;
+    width: 226px;
+}
+
+.pricePrepaid .prepaidBtn a {
+    display: block;
+    font-size: 30px;
+    color: #fff;
+    background: #1133ae;
+    padding: 5px 0px 4px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.pricePrepaid .prepaidText {
+    font-size: 16px;
+}
+
+
+/* interview */
+
+.areainterview {
+    background: #e9f7fb;
+    border-radius: 10px;
+    padding: 54px 90px 41px;
+    margin-bottom: 55px;
+}
+
+.areainterview .interviewRow {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 33px;
+}
+
+.areainterview .interviewRow:last-child {
+    margin-bottom: 0;
+}
+
+.interviewRow .interviewTitle {
+    position: relative;
+    font-size: 24px;
+    padding-left: 59px;
+    margin-top: 4px;
+}
+
+.interviewRow .interviewTitle:before {
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: 0;
+    background: url(../images/index/icon-clock.svg) no-repeat;
+    width: 41px;
+    height: 41px;
+}
+
+.interviewRow .interviewTitle.foreign:before {
+    background: url(../images/index/icon-foreign.svg) no-repeat;
+}
+
+.interviewRow .interviewText {
+    width: 66%;
+    font-size: 16px;
+    line-height: 1.95;
+}
+
+
+/* areaChange */
+
+.areaChange {
+    background: #f6f9f9;
+    border-radius: 10px;
+    padding: 51px 33px 44px;
+    margin-bottom: 61px;
+}
+
+.areaChange .chageTitle {
+    position: relative;
+    font-size: 23px;
+    color: #1133ae;
+    padding-left: 21px;
+    margin-bottom: 37px;
+}
+
+.areaChange .chageTitle:before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 0;
+    width: 4px;
+    height: 79%;
+    background: #1133ae;
+}
+
+.areaChange .chageDetails {
+    padding-left: 36px;
+    margin-bottom: 38px;
+}
+
+.areaChange .chageDetails .chageTitleSub {
+    position: relative;
+    font-size: 22px;
+    color: #1133ae;
+    padding-left: 21px;
+    margin-bottom: 23px;
+}
+
+.areaChange .chageDetails .chageTitleSub:before {
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: 5px;
+    width: 0;
+    height: 0;
+    border-top: 7px solid transparent;
+    border-left: 8px solid #1133ae;
+    border-bottom: 8px solid transparent;
+}
+
+.areaChange .chageDetails .chageList {
+    font-size: 16px;
+    text-indent: -19px;
+    padding-left: 18px;
+    margin-bottom: 15px;
+}
+
+.areaChange .chageDetails .chageList.example {
+    text-indent: -23px;
+    padding-left: 22px;
+    margin-left: 7px;
+}
+
+.areaChange.changeBlue {
+    background: #e9f7fb;
+}
+
+.areaChange.onlyTitle {
+    padding-bottom: 1px;
+}
+
+.areaChange.onlyTitle .chageTitle {
+    margin-bottom: 20px;
+}
+
+.areaChange.onlyTitle .chageDetails .chageList {
+    text-indent: 0;
+    padding-left: 0;
+    line-height: 1.7;
+}
+
+.areaChange.onlyTitle .chageDetails .chageList:last-child {
+    margin-bottom: 0;
+}
+
+.areaChange .tableChange {
+    margin: 0 26px 0 21px;
+}
+
+.areaChange .tableChange .showNotification {
+    text-align: right;
+    margin-right: 4px;
+    margin-bottom: 8px;
+}
+
+.areaChange .tableChange ul {
+    display: flex;
+    width: 100%;
+    border: 2px solid #1133ae;
+}
+
+.areaChange .tableChange .notificationTitle {
+    background: #e7ebf7;
+    padding-left: 15px;
+    line-height: 1.69;
+    min-height: 81px;
+}
+
+.areaChange .tableChange li {
+    width: 143px;
+}
+
+.areaChange .tableChange li:first-child {
+    width: 167px;
+}
+
+.areaChange .tableChange li:nth-child(2) {
+    width: 148px;
+}
+
+.areaChange .tableChange .notificationTitle span {
+    display: block;
+    font-size: 12px;
+    margin-left: -5px;
+}
+
+.areaChange .tableChange .notificationContent {
+    background: #fff;
+    padding-left: 15px;
+    line-height: 1.65;
+    min-height: 78px;
+}
+
+.areaChange .tableChange li:first-child .notificationTitle {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.areaChange .tableChange .notificationTitle,
+.areaChange .tableChange .notificationContent {
+    border: 1px solid #1133ae;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+.areaChange .listExample.spOnly {
+    display: none;
+}
+
+.areaChange .listExample {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 19px 0 18px;
+    background: #fff;
+    margin: 0 27px 49px 22px;
+    width: 93.7%;
+    text-align: center;
+}
+
+.areaChange .listExample li:first-child {
+    width: 167px;
+}
+
+.areaChange .listExample li:nth-child(2) {
+    width: 148px;
+}
+
+.areaChange .listExample li {
+    width: 143px;
+}
+
+.areaChange .listExample span {
+    display: block;
+    margin-top: 1px;
+}
+
+.areaChange .chageCost {
+    padding: 0 28px;
+}
+
+.areaChange .chageCost .costText {
+    position: relative;
+    font-size: 16px;
+    padding-left: 19px;
+    line-height: 1.68;
+    margin-bottom: 17px;
+}
+
+.areaChange .chageCost .costText span {
+    display: block;
+    margin-top: 18px;
+}
+
+.areaChange .chageCost .costText:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 1px;
+    background: #1133ae;
+    border-radius: 50%;
+    width: 14px;
+    height: 14px;
+}
+
+
+/* .areaConsultation */
+
+.areaConsultation {
+    margin-bottom: 213px;
+}
+
+.areaConsultation .area {
+    padding: 75px 0 114px;
+}
+
+.areaConsultation .consultationContent {
+    position: relative;
+    margin-top: -74px;
+}
+
+.areaConsultation .areaFrames {
+    margin-bottom: 49px;
+}
+
+.areaConsultation .pricePrepaid {
+    margin-bottom: 44px;
+}
+
+.areaConsultation .areainterview {
+    margin-bottom: 49px;
+}
+
+.areaConsultation .areaChange .chageDetails .chageList {
+    margin-bottom: 28px;
+}
+
+
+/* areaVoice */
+
+.areaVoice .area {
+    padding: 70px 0 192px;
+}
+
+.areaVoice .areaTitle {
+    margin-bottom: 19px;
+}
+
+.areaVoice .voiceDetails {
+    margin-top: -62px;
+    position: relative;
+    background: #f6f9f9;
+    padding-bottom: 239px;
+}
+
+.areaVoice .voiceDetails .photoMain {
+    margin-bottom: 43px;
+    transform: translateY(-63px);
+}
+
+.areaVoice .voiceDetails .photoMain img {
+    width: 100%;
+}
+
+.areaVoice .voiceDetails .voiceBox {
+    position: relative;
+    border: 5px solid #c0e9ff;
+    border-radius: 13px;
+    padding: 24px 42px 44px;
+    background: #fff;
+}
+
+.areaVoice .voiceBox .voiceTitle {
+    position: relative;
+    font-size: 24px;
+    margin-bottom: 65px;
+    padding-left: 184px;
+}
+
+.voiceTitle:before,
+.voiceTitle:after {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    height: 5px;
+    width: 72.7%;
+    background-color: #c0e9ff;
+}
+
+.voiceTitle:after {
+    width: 60px;
+    background-color: #1133ae;
+}
+
+.areaVoice .voiceBox .voiceTitle span {
+    display: block;
+    font-size: 18px;
+    color: #0076c7;
+    margin: 5px -9px;
+}
+
+.areaVoice .voiceBox .voiceText {
+    line-height: 1.86;
+}
+
+.areaVoice .case {
+    position: absolute;
+    top: -26px;
+    left: 50px;
+    background: #fff url(../images/index/voice-bcr.png) no-repeat;
+    background-size: 100%;
+    width: 139px;
+    height: 140px;
+    font-size: 30px;
+    text-align: center;
+    color: #1133ae;
+    padding-top: 9px;
+    border-radius: 50%;
+}
+
+.areaVoice .case span {
+    display: block;
+    font-size: 90px;
+    margin-top: -43px;
+}
+
+@media (max-width: 917px) and (min-width: 769px) {
+    .areaChange .tableChange .notificationTitle,
+    .areaChange .tableChange .notificationContent {
+        font-size: 12px;
+    }
+    .areaProcedure .procedureFrames {
+        margin-left: 26px;
+        padding-left: 61px;
+    }
+    .areaProcedure .procedureFrames .number {
+        width: 95px;
+        height: 95px;
+        font-size: 60px;
+        top: -30px;
+        left: -111px;
+    }
+    .areaProcedure .procedurePhone .numberPhone a,
+    .areaProcedure .procedurePhone .phoneTitle {
+        letter-spacing: 0;
+    }
+    .areaProcedure .procedureMain .procedureBox.cancel {
+        padding: 41px 20px 25px 20px;
+    }
+    .areaProcedure .procedureBox .boxPink {
+        padding: 33px 35px 46px;
+    }
+    .areaProcedure .procedureSoftware {
+        justify-content: space-between;
+        padding-left: 0;
+    }
+    .areaProcedure .softwareLink {
+        padding-left: 0;
+        text-align: center;
+    }
+    .photoMain {
+        width: 100%;
+    }
+    .area .service {
+        font-size: 30px;
+    }
+    /* areaFrames */
+    .areaFrames .framesLeft .framesBtn {
+        width: 100%;
+    }
+    .areaFrames .framesLeft .framesBtn a {
+        padding-left: 13px 0;
+    }
+    .areaFrames .framesLeft .framesBtn a:before {
+        top: 50%;
+        width: 14%;
+        height: 60%;
+    }
+    /* .areainterview */
+    .areainterview {
+        padding: 40px;
+    }
+    .interviewRow .interviewText {
+        width: 61%;
+    }
+}
+
+@media (max-width: 917px) and (min-width: 769px) {
+    /* areaWorries */
+    .areaWorries .listWorries li .textList {
+        padding: 21px 14px 28px;
+        font-size: 15px;
+    }
+    .areaWorries .listWorries li.listThree .textList {
+        padding: 46px 10px 49px;
+    }
+    .areaWorries .listWorries li.listTwo .textList {
+        padding: 27px 20px 37px;
+    }
+    .areaWorries .listWorries li.listFour .textList {
+        padding: 22px 10px 31px;
+    }
+    .areaWorries .listWorries li.listFive .textList {
+        padding: 30px 10px 36px;
+    }
+    .areaWorries .listWorries li.listOne {
+        left: 18.8%;
+        top: 45px;
+    }
+    .areaWorries .listWorries li.listThree {
+        left: 13.9%;
+        top: 217px;
+    }
+    .areaWorries .listWorries li.listTwo {
+        width: 36.3%;
+        left: 50.4%;
+        top: 76px;
+    }
+    .areaWorries .listWorries li.listFour {
+        width: 28.2%;
+        top: 39px;
+        right: -11.8%;
+    }
+    .areaWorries .listWorries li.listFive {
+        right: -17.3%;
+    }
+    .btnService {
+        width: 90%;
+    }
+    .btnService a {
+        padding: 18px 0px 11px;
+    }
+    .btnService a::before {
+        left: 25%;
+    }
+    .btnService:last-child a::before {
+        left: 26.1%;
+    }
+}
+
+@media (max-width: 768px) {
+    #main {
+        margin-top: 1px;
+    }
+    #main .mainImage img {
+        height: auto;
+    }
+    #areaContact .contactTitle small {
+        font-size: 17px;
+    }
+    #areaContact .boxPhone .address {
+        font-size: 15px;
+    }
+    /* areaWorries */
+    .areaWorries {
+        position: relative;
+        min-height: unset;
+        padding: 33px 0 28px;
+    }
+    .areaWorries::after {
+        border-top: 54px solid #bcdcf8;
+        border-right: 45px solid transparent;
+        border-bottom: 0;
+        border-left: 45px solid transparent;
+        bottom: -62px;
+        z-index: 9;
+    }
+    .areaWorries .titleWorries {
+        line-height: 1.65;
+        letter-spacing: 1.4px;
+        padding-left: 0;
+        font-size: 21px;
+        margin-bottom: 34px;
+    }
+    .areaWorries .listWorries {
+        margin-bottom: 13px;
+    }
+    .areaWorries .listWorries li {
+        position: unset;
+        font-size: 16px;
+        letter-spacing: 0.1px;
+        margin-bottom: 20px;
+    }
+    .areaWorries .listWorries li.listThree {
+        width: 254px;
+        left: unset;
+        top: unset;
+        transform: unset;
+        margin-bottom: 0;
+    }
+    .areaWorries .listWorries li.listTwo {
+        width: 232px;
+        left: unset;
+        top: unset;
+        transform: unset;
+        margin-bottom: 7px;
+    }
+    .areaWorries .listWorries li.listThree .textList {
+        padding: 22px 0px 19px 15px;
+    }
+    .areaWorries .listWorries li.listOne {
+        width: 164px;
+        left: unset;
+        top: unset;
+        transform: unset;
+        margin: 0 0 10px auto;
+    }
+    .areaWorries .listWorries li.listThree .textList::after {
+        width: 46px;
+        height: 19px;
+        bottom: -27px;
+        left: 53%;
+        transform: translate(-50%, -50%);
+    }
+    .areaWorries .listWorries li.listFour {
+        width: 210px;
+        left: unset;
+        top: unset;
+        right: unset;
+        transform: unset;
+    }
+    .areaWorries .listWorries li.listFive {
+        width: 233px;
+        left: unset;
+        top: unset;
+        right: unset;
+        transform: unset;
+        margin: 0 0 26px auto;
+    }
+    .areaWorries .listWorries li.listFive .textList {
+        padding: 20px 10px 19px 24px;
+    }
+    .areaWorries .listWorries li.listFour .textList {
+        padding: 18px 20px 23px 25px;
+    }
+    .areaWorries .listWorries li .textList {
+        padding: 16px 24px 18px;
+    }
+    .areaWorries .listWorries li.listTwo .textList {
+        padding: 20px 0px 22px 24px;
+    }
+    .areaWorries .listWorries li .textList::after {
+        width: 25px;
+        height: 19px;
+        bottom: -24px;
+        left: 34%;
+        transform: scaleX(-1.5) translate(-50%, -50%);
+    }
+    .areaWorries .listWorries li.listFive .textList::after {
+        width: 25px;
+        height: 19px;
+        bottom: -28px;
+        left: 33%;
+    }
+    .areaWorries .listWorries li.listTwo .textList::after {
+        width: 51px;
+        height: 22px;
+        bottom: -21px;
+        left: 48%;
+        transform: translateX(-50%);
+    }
+    .areaWorries .listWorries li.listFour .textList::after {
+        width: 35px;
+        height: 18px;
+        bottom: -25px;
+        left: 56%;
+        background-size: 100% 100%;
+        transform: translate(-50%, -50%);
+    }
+    .areaWorries .imageWorries {
+        width: 161px;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .areaWorries .imageWorries img {
+        width: 100%;
+    }
+    /* btnService */
+    .btnService {
+        width: 94%;
+        font-size: 22px;
+        margin-bottom: 27px;
+    }
+    .btnService a {
+        padding: 56px 0px 10px 2px;
+        letter-spacing: 2.5px;
+        border-radius: 8px;
+    }
+    .btnService a::before {
+        width: 36px;
+        height: 44px;
+        background-size: 100%;
+        left: 44%;
+        top: 12px;
+    }
+    .btnService:last-child a {
+        letter-spacing: 2px;
+        font-size: 22px;
+        padding: 52px 0px 13px 4px;
+    }
+    .btnService:last-child a::before {
+        left: 44.1%;
+        background-size: 100%;
+        top: 15px;
+    }
+    /* areaOpinion */
+    .areaOpinion .inner {
+        padding: 0;
+    }
+    /* areaService */
+    .areaService {
+        margin-bottom: 116px;
+    }
+    .areaService .area {
+        padding: 56px 0 50px;
+    }
+    .areaService .area::before {
+        content: unset;
+    }
+    .areaService .area .service {
+        font-size: 22px;
+        padding-left: 19px;
+        letter-spacing: 0px;
+    }
+    .areaService .area .service:before {
+        top: 6px;
+        width: 5px;
+        height: 87%;
+        left: 1px;
+    }
+    .areaService .area .areaTitle {
+        margin-bottom: 37px;
+    }
+    .areaService .area .service .smDes {
+        font-size: 18px;
+    }
+    .contentService {
+        margin: -30px 0 103px;
+    }
+    .areaService .imageService {
+        margin-bottom: 20px;
+    }
+    .areaService .textContent {
+        font-size: 17px;
+        line-height: 1.85;
+        margin-bottom: 64px;
+        padding: 0 18px;
+    }
+    /* areaDoctor */
+    .areaDoctor .inner {
+        padding: 0 4.3%;
+    }
+    /* areaDifferent */
+    .areaDifferent {
+        margin-bottom: 45px;
+    }
+    .areaDifferent .areaTitleLead {
+        margin-left: -5px;
+        letter-spacing: 0.5px;
+        padding: 0 0 15px;
+        margin-bottom: 28px;
+    }
+    .areaDifferent .desText {
+        line-height: 1.92;
+        margin: 0 0 0 -6px;
+        padding-left: 0;
+        font-size: 17px;
+    }
+    .areaDifferent .listDifferent {
+        display: block;
+        padding-left: 0;
+        margin: 39px 0 28px;
+    }
+    .areaDifferent .listDifferent li {
+        width: 102%;
+        margin: 0 0 77px;
+    }
+    .areaDifferent .listDifferent li:first-child::after {
+        width: 23px;
+        height: 74px;
+        left: 33.6%;
+        top: 45.8%;
+        transform: rotate(90deg) translate(-50%, -50%);
+    }
+    .areaDifferent .desTitle {
+        font-size: 18px;
+        padding-left: 0;
+        letter-spacing: 0.6px;
+        margin: 0 0 5px -7px;
+    }
+    .areaDifferent .desTitle .dotTitle {
+        font-size: 29px;
+    }
+    .areaDifferent .listDifferent li:last-child {
+        margin-bottom: 0;
+    }
+    /* areaDoctor */
+    .blockDoctor {
+        background: #e9f7fb;
+        border-radius: 20px;
+        padding: 34px 19px 18px 23px;
+    }
+    .blockDoctor .listDoctor .textDoctor {
+        font-size: 17px;
+        line-height: 1.95;
+        padding-left: 2px;
+    }
+    .blockDoctor .areaTitleLead {
+        padding: 0 0 17px 0;
+        margin-bottom: 25px;
+    }
+    .blockDoctor .areaTitleLead::before {
+        left: 49.6%;
+    }
+    .blockDoctor .listDoctor {
+        display: block;
+        margin-bottom: 24px;
+    }
+    .blockDoctor .listDoctor li {
+        width: 100%;
+        margin: 0 0 14px 0;
+    }
+    .blockDoctor .listDoctor .imageDoctor {
+        margin-bottom: 17px;
+    }
+    .blockDoctor .listDoctor li:last-child {
+        margin-bottom: 0;
+    }
+    .blockDoctor .acceptBlock .titleAccept {
+        font-size: 18px;
+        margin-bottom: 33px;
+        line-height: 1.66;
+    }
+    .blockDoctor .acceptBlock {
+        padding: 21px 15px 25px;
+        margin-right: 0;
+    }
+    .blockDoctor .acceptBlock .listAccept {
+        font-size: 17px;
+        padding-left: 20px;
+    }
+    .blockDoctor .acceptBlock .listAccept li::before {
+        left: -19px;
+        top: -16px;
+    }
+    .blockDoctor .acceptBlock .listAccept li {
+        margin-bottom: 6px;
+        line-height: 1.55;
+    }
+    .areaDoctor {
+        margin-bottom: 52px;
+    }
+    /* .areaDiseases */
+    .areaDiseases .inner {
+        padding: 0 4.3%;
+    }
+    .areaDiseases .listDiseases {
+        display: block;
+        padding: 28px 22px 29px;
+        border-radius: 8px;
+        margin: 32px 0 27px;
+    }
+    .areaDiseases .detailsList li {
+        font-size: 17px;
+        margin-bottom: 5px;
+        line-height: 1.6;
+    }
+    .areaDiseases .listDiseases>li {
+        width: 100%;
+        margin-right: 0;
+    }
+    .areaDiseases .detailsList li:last-child {
+        margin-bottom: 5px;
+    }
+    .areaDiseases .listDiseases>li:last-child li:last-child {
+        margin-bottom: 0;
+    }
+    .areaService .area.consultation .service {
+        font-size: 22px;
+        letter-spacing: 1.3px;
+        padding-left: 19px;
+    }
+    .areaService .area.consultation {
+        padding: 33px 0 133px;
+    }
+    /* contentDoctor */
+    .contentDoctor .areaOpinion {
+        margin-top: -127px;
+    }
+    .contentDoctor .textContent {
+        margin-bottom: 46px;
+    }
+    .contentDoctor .blockDoctor .listDoctor li {
+        margin: 0 0 20px 0;
+    }
+    .contentDoctor .blockDoctor .listDoctor li.last {
+        margin-bottom: 20px;
+    }
+    .contentDoctor .blockDoctor .listDoctor li:last-child {
+        margin-bottom: 0;
+    }
+    .contentDoctor .blockDoctor .listDoctor {
+        margin-bottom: 0;
+    }
+    .contentDoctor .blockDoctor {
+        margin-bottom: 0;
+        padding-bottom: 53px;
+    }
+    .contentDoctor .areaDoctor {
+        margin-bottom: 31px;
+    }
+    /*tan*/
+    #areaContact {
+        padding: 30px 0 43px;
+    }
+    #areaContact .btnContact {
+        margin: 27px 16px 0;
+    }
+    #areaContact .btnContact a {
+        padding: 53px 8px 14px;
+        font-size: 19.5px;
+    }
+    .areaFlow .area {
+        padding: 28px 0 76px;
+    }
+    .areaFlow {
+        margin-bottom: 71px;
+    }
+    .areaPrice .area {
+        padding: 56px 0 115px;
+    }
+    .areaPrice.areaTitle {
+        margin-bottom: 36px;
+    }
+    .areaFlow .areaProcedure .imageFlow {
+        margin-bottom: 58px;
+    }
+    .areaFlow .areaProcedure .procedureMain .procedureContent {
+        margin-bottom: 18px;
+    }
+    .areaFlow .areaProcedure .procedureMain .procedureRegistration a {
+        padding: 53px 0 19px;
+        line-height: 1.43;
+        text-align: center;
+        font-size: 22px;
+    }
+    .areaFlow .areaProcedure .procedureFrames .procedureMain {
+        margin-bottom: 94px;
+    }
+    .areaFlow .areaProcedure .procedureMain .procedureLink {
+        padding-top: 8px;
+    }
+    .areaFlow .areaProcedure .procedureContent .procedureImage {
+        margin-top: 37px;
+        margin-left: 0px;
+        width: 96.9%;
+    }
+    .areaFlow .areaProcedure .procedureContent .procedureImage img {
+        width: 100%;
+    }
+    /* areaProcedure */
+    .areaProcedure {
+        padding-bottom: 66px;
+        padding-bottom: 0;
+    }
+    .areaProcedure .area {
+        padding: 55px 0 73px;
+    }
+    .areaProcedure .areaTitle {
+        margin-bottom: 36px;
+    }
+    .areaProcedure .procedureFrames .procedureMain {
+        margin-bottom: 96px;
+    }
+    .areaProcedure .procedureFrames .sendMail {
+        margin-bottom: 0;
+    }
+    .areaProcedure .procedureFrames .sendMail .procedureBox {
+        padding-bottom: 1px;
+    }
+    .areaProcedure .procedureFrames {
+        border-left: none;
+        padding-left: 0;
+        margin-left: 0;
+    }
+    .procedureDetails .photoMain {
+        margin-bottom: 60px;
+    }
+    .areaProcedure .procedureMain .procedureTitle {
+        font-size: 22px;
+        padding-left: 86px;
+        margin-bottom: 49px;
+    }
+    .areaProcedure .procedureFrames .number {
+        font-size: 47px;
+        left: -6px;
+        width: 74px;
+        height: 74px;
+        top: -19px;
+    }
+    .areaProcedure .procedureMain .procedureContent {
+        margin-bottom: 20px;
+    }
+    .areaProcedure .procedureTest {
+        font-size: 17px;
+        line-height: 1.86;
+        text-indent: -14px;
+        padding-left: 6px;
+    }
+    .areaProcedure .procedureMain .procedureRegistration {
+        display: block;
+        width: 94.5%;
+        margin: 0 auto;
+    }
+    .areaProcedure .procedureMain .procedureRegistration a {
+        padding: 52px 0 12px;
+    }
+    .areaProcedure .procedureMain .procedureRegistration a:before {
+        top: 15px;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+    .areaProcedure .procedureContent .example {
+        font-size: 17px;
+        margin-left: 0;
+        line-height: 1.89;
+        margin-top: 28px;
+    }
+    .areaProcedure .procedureMain .procedureLink {
+        margin-bottom: 42px;
+    }
+    .areaProcedure .procedureMain .procedureLink li {
+        padding-left: 12px;
+        margin-bottom: 14px;
+    }
+    .areaProcedure .procedureMain .procedureLink a {
+        padding-bottom: 3px;
+    }
+    .areaProcedure .procedureMain .procedureContent {
+        margin-bottom: 19px;
+    }
+    .areaProcedure .procedureMain .procedureBox {
+        padding: 52px 20px 60px;
+        margin: 0 -8px;
+        width: calc(100% + 16px);
+    }
+    .areaProcedure .procedureMain .procedureBox.cancel {
+        flex-direction: column;
+        padding: 24px 24px 16px 25px;
+        margin: 0 auto;
+        width: 94.6%;
+    }
+    .areaProcedure .procedureMain .boxTitle {
+        font-size: 21px;
+    }
+    .areaProcedure .procedurePhone .phoneTitle span {
+        font-size: 12px;
+        margin-left: 0;
+        letter-spacing: 0;
+    }
+    .areaProcedure .procedurePhone .phoneTitle {
+        font-size: 8px;
+        margin-left: 0;
+        letter-spacing: 0;
+    }
+    .areaProcedure .procedurePhone .numberPhone a {
+        font-size: 26px;
+        letter-spacing: 0;
+        margin-left: 35px;
+    }
+    .areaProcedure .procedureMain .procedurePhone {
+        margin-top: 0;
+    }
+    .areaProcedure .procedurePhone .numberPhone a:before {
+        left: -33px;
+        width: 21px;
+        height: 21px;
+    }
+    .areaProcedure .procedureMain .procedureBox.card .cardTitle {
+        font-size: 15px;
+        padding-left: 15px;
+    }
+    .areaProcedure .procedureMain .procedureBox.card .cardTitle:before {
+        width: 11px;
+        height: 11px;
+        left: -1px;
+    }
+    .areaProcedure .procedureMain .procedureBox.card {
+        width: 94.7%;
+        margin: 0 9px;
+        padding: 22px 16px 13px 33px;
+    }
+    .areaProcedure .procedureBox .listCard {
+        flex-wrap: wrap;
+    }
+    .areaProcedure .procedureBox .listCard .cardVisa {
+        margin-top: 14px;
+        margin-left: 9px;
+    }
+    .areaProcedure .procedureBox .listCard li {
+        width: calc(100% / 3 - 10px);
+        margin: 3px 8px 15px 0;
+        text-align: center;
+    }
+    .areaProcedure .procedureBox .listCard li:nth-child(3n) {
+        margin-right: 0;
+    }
+    .areaProcedure .procedureBox .listCard li:nth-child(4n) {
+        margin-left: 9px;
+    }
+    .areaProcedure .procedureBox .procedureIntroduce {
+        padding: 0;
+        font-size: 17px;
+        line-height: 1.9;
+        margin-bottom: 20px;
+        margin-left: -4px;
+    }
+    .areaProcedure .procedureBox .boxPink {
+        padding: 27px 21px 46px;
+        margin: 0 -3px;
+        border-radius: 18px;
+        width: calc(100% + 6px);
+    }
+    .areaProcedure .boxPink .pinkTitle {
+        font-size: 19px;
+        margin-left: 22px;
+        margin-bottom: 25px;
+        line-height: 1.38;
+    }
+    .areaProcedure .boxPink .pinkCheckBox:before {
+        top: 0px;
+        left: 1px;
+        width: 24px;
+        height: 24px;
+    }
+    .areaProcedure .boxPink .pinkTitle:before {
+        left: -21px;
+        width: 17px;
+        height: 17px;
+        top: 5px;
+    }
+    .areaProcedure .boxPink .pinkCheckBox {
+        font-size: 17px;
+        padding-left: 34px;
+    }
+    .areaProcedure .boxPink .pinkCheckBox span {
+        margin-top: 4px;
+        margin-left: -10px;
+    }
+    .areaProcedure .boxPink .pinkCheckBox span a {
+        padding: 4px 38px 3px 31px;
+        display: block;
+        font-size: 15px;
+        margin-left: 11px;
+    }
+    .areaProcedure .boxPink .pinkCheckBox span a:before {
+        left: 9px;
+        width: 15px;
+        height: 15px;
+    }
+    .areaProcedure .boxPink .pinkNone {
+        font-size: 14px;
+        padding-top: 8px;
+        margin-bottom: 9px;
+    }
+    .areaProcedure .procedureBox .pinkDeails {
+        margin-bottom: 62px;
+    }
+    .areaProcedure .specifically {
+        margin-top: -5px;
+        padding-left: 25px;
+    }
+    .areaProcedure .specifically .specificallyText {
+        font-size: 15px;
+        padding-left: 14px;
+        text-indent: -12px;
+        line-height: 1.78;
+    }
+    .areaProcedure .procedureMain .location .boxTitle {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    .areaProcedure .location {
+        margin: 41px 0 0;
+        border-radius: 18px;
+        width: calc(100% + 6px);
+    }
+    .areaProcedure .procedureMain .location .boxTitle:before {
+        top: 2px;
+        left: 4px;
+        width: 3px;
+        height: 17px;
+    }
+    .areaProcedure .location .locationInfor {
+        font-size: 17px;
+        margin-bottom: 5px;
+    }
+    .areaProcedure .location .locationInfor .fax {
+        display: block;
+    }
+    .areaProcedure .mainlTutorial {
+        margin-left: -4px;
+        margin-top: -5px;
+        margin-bottom: 19px;
+    }
+    .areaProcedure .procedureMain .boxTitle:before {
+        height: 77%;
+    }
+    .areaProcedure .procedureSoftware {
+        flex-direction: column;
+        padding-left: 0;
+        margin: -25px 0 24px;
+    }
+    .areaProcedure .softwareContent {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 41px;
+    }
+    .areaProcedure .softwarePhoto {
+        width: calc(100% + 6px);
+        margin: 0 -5px;
+    }
+    .areaProcedure .procedureBox .softwareText {
+        font-size: 17px;
+        line-height: 1.98;
+        margin-bottom: 33px;
+        margin-left: -3px;
+    }
+    .areaProcedure .softwareLink {
+        padding-left: 0;
+    }
+    .areaProcedure .softwareLink .softwareZoom {
+        width: 86.3%;
+        margin: 0 auto 25px;
+    }
+    .areaProcedure .softwareLink .softwareZoom img {
+        width: 100%;
+    }
+    .areaProcedure .softwareLink .softwareInstall a {
+        font-size: 21px;
+        padding-left: 48px;
+    }
+    .areaProcedure .softwareLink .softwareInstall a:before {
+        top: -6px;
+        left: 7px;
+        width: 32px;
+        height: 32px;
+    }
+    .photoMain {
+        width: 100%;
+        padding: 0;
+    }
+    .area::before {
+        content: unset;
+    }
+    .area .service {
+        font-size: 22px;
+        padding-left: 20px;
+    }
+    .area .service:before {
+        left: 2px;
+        top: 7px;
+        width: 5px;
+        height: 84%;
+    }
+    .area .service .serviceContent {
+        font-size: 16px;
+        margin: 9px 1px;
+        padding: 0.5px 6px;
+        border-radius: 4px;
+    }
+    .areaProcedure .location .locationDetails {
+        margin-bottom: 0;
+    }
+    .areaProcedure .locationNote {
+        font-size: 17px;
+        line-height: 1.936;
+        margin-left: 13px;
+    }
+    .areaChange .tableChange .notificationTitle,
+    .areaChange .tableChange .notificationContent {
+        width: 50%;
+        font-size: 15px;
+    }
+    .areaChange .tableChange .notificationTitle span {
+        font-size: 11px;
+        margin-top: 2px;
+    }
+    /* areaPrice */
+    .areaFrames {
+        width: 96%;
+        margin: 0 auto 38px;
+        border: 6px solid #1133ae;
+        padding: 0 29px 48px;
+        border-radius: 12px;
+    }
+    .areaPrice .priceContent {
+        margin-top: -93px;
+    }
+    .areaFrames .framesContent {
+        flex-direction: column;
+    }
+    .areaFrames .framesLeft {
+        width: 100%;
+        border-right: none;
+        border-bottom: none;
+        padding: 24px 0 14px;
+    }
+    .areaFrames .framesLeft .framesTitle {
+        font-size: 22px;
+    }
+    .areaFrames .framesLeft .framesTitle.framesTitleSpBd {
+        border-bottom: 1px solid #1133ae;
+        padding-bottom: 13px;
+    }
+    .areaFrames .framesLeft .framesTitle.framesTitleSpNoBd {
+        border-bottom: none;
+        padding-bottom: 1px;
+    }
+    .areaFrames .framesLeft .framesBtn {
+        margin-top: 7px;
+        width: 232px;
+    }
+    .areaFrames .framesLeft .framesBtn a {
+        padding: 21px 0 19px;
+    }
+    .areaFrames .framesLeft .framesBtn a:before {
+        top: 51%;
+        left: 15px;
+    }
+    .areaFrames .framesRight {
+        width: 100%;
+        padding-top: 9px;
+    }
+    .areaFrames .framesRight .framesDetail {
+        display: block;
+        padding: 0 56px;
+        text-align: center;
+    }
+    .areaFrames .framesDetail .framesInformation {
+        font-size: 14px;
+        padding-top: 33px;
+    }
+    .areaFrames .framesDetail .framesInformation.top {
+        border-top: 1px solid #1133ae;
+        padding-top: 24px;
+    }
+    .areaFrames .framesDetail .framesPrice {
+        font-size: 38px;
+        text-align: center;
+        line-height: 1.05;
+        margin-top: 2px;
+    }
+    .areaFrames .framesDetail .framesPrice .priceDes {
+        font-size: 21px;
+    }
+    .areaFrames .framesDetail .framesPrice>span {
+        display: block;
+        font-size: 15px;
+    }
+    .areaFrames.oneRow::before {
+        width: 111.6%;
+        top: 0;
+        left: -9px;
+    }
+    .areaFrames.oneRow::after {
+        width: 54px;
+        height: 79px;
+        top: -22.5px;
+        left: 53%;
+    }
+    .areaFrames.oneRow .framesLeft {
+        padding: 7px 56px 12px;
+    }
+    .areaFrames.oneRow {
+        width: 100%;
+        padding: 37px 0 0;
+        margin: 64px auto 0;
+    }
+    .areaFrames.oneRow .framesRight {
+        padding: 0;
+    }
+    .areaFrames.oneRow .framesDetail .framesPrice {
+        text-align: center;
+        margin: 5px 0 0;
+    }
+    /* pricePrepaid */
+    .areaPrice {
+        margin-bottom: 80px;
+    }
+    .pricePrepaid {
+        margin-bottom: 23px;
+    }
+    .pricePrepaid .prepaidBtn {
+        width: 165px;
+        margin-bottom: 14px;
+    }
+    .pricePrepaid .prepaidBtn a {
+        font-size: 22px;
+        padding: 5px 0px 1px;
+    }
+    .pricePrepaid .prepaidText {
+        font-size: 17px;
+        padding: 0 30px;
+        line-height: 1.95;
+    }
+    /* .areainterview */
+    .areainterview {
+        margin: 0 auto 30px;
+        width: 94%;
+        padding: 37px 19px 39px;
+    }
+    .areainterview .interviewRow {
+        flex-direction: column;
+        margin-bottom: 35px;
+    }
+    .interviewRow .interviewTitle {
+        text-align: center;
+        padding-left: 7px;
+        font-size: 22px;
+    }
+    .interviewRow .interviewTitle.foreign {
+        padding-left: 30px;
+    }
+    .interviewRow .interviewTitle:before {
+        left: 38px;
+        width: 38px;
+    }
+    .interviewRow .interviewText {
+        width: 100%;
+        margin-top: 28px;
+        line-height: 1.8;
+    }
+    .areaChange .chageCost .costCancel {
+        margin: -7px 18px 14px;
+    }
+    .areaChange .chageCost .costCancel a {
+        position: relative;
+        color: #1133ae;
+        font-size: 20px;
+    }
+    .areaChange .chageCost .costCancel a:before {
+        content: "";
+        position: absolute;
+        top: 56%;
+        left: -16px;
+        transform: translateY(-50%);
+        border-top: 7px solid transparent;
+        border-left: 8px solid #1133ae;
+        border-bottom: 8px solid transparent;
+    }
+    /* .areaChange */
+    .areaChange {
+        margin: 0 auto 27px;
+        width: 94%;
+        padding: 37px 19px 30px;
+    }
+    .areaChange .chageTitle {
+        font-size: 21px;
+        margin-bottom: 38px;
+        padding-left: 19px;
+    }
+    .areaChange .chageTitle:before {
+        height: 87%;
+        width: 3px;
+    }
+    .areaChange .chageDetails {
+        padding-left: 0;
+    }
+    .areaChange .chageDetails .chageTitleSub {
+        font-size: 20px;
+        padding-left: 16px;
+        margin-bottom: 12px;
+    }
+    .areaChange .chageDetails .chageTitleSub:before {
+        top: 10px;
+        left: 1px;
+        border-top: 7px solid transparent;
+        border-left: 7px solid #1133ae;
+        border-bottom: 7px solid transparent;
+    }
+    .areaChange .chageDetails .chageList {
+        font-size: 17px;
+        padding-left: 10px;
+        line-height: 1.6;
+        text-indent: -16px;
+        margin-bottom: 26px;
+    }
+    .areaChange .chageDetails .chageList.example {
+        text-indent: -54px;
+        margin-left: 32px;
+    }
+    .areaChange.onlyTitle {
+        padding: 31px 19px;
+    }
+    .areaChange.onlyTitle .chageTitle {
+        margin-bottom: 44px;
+    }
+    .areaChange.onlyTitle .chageDetails .chageList {
+        margin-left: 0;
+        line-height: 1.91;
+    }
+    .areaChange.onlyTitle .chageDetails .chageList:last-child {
+        text-indent: -10px;
+        padding-left: 10px;
+    }
+    .areaChange.onlyTitle {
+        padding: 31px 19px 1px;
+        border-radius: 9px;
+    }
+    .areaConsultation {
+        margin-bottom: 106px;
+    }
+    .areaConsultation .consultationContent {
+        margin-top: -91px;
+    }
+    .areaFrames .framesText {
+        font-size: 14px;
+        margin: 24px 0 4px;
+        padding-left: 8px;
+        line-height: 1.3;
+    }
+    .areaConsultation .areaFrames {
+        margin-bottom: 37px;
+    }
+    .areaConsultation .pricePrepaid {
+        margin-bottom: 20px;
+    }
+    .areaChange .listExample.pcOnly {
+        display: none;
+    }
+    .areaChange .listExample.spOnly {
+        display: block;
+    }
+    .areaChange .tableChange {
+        margin: 0 -10px;
+        width: calc(100% + 20px);
+    }
+    .areaChange .tableChange ul {
+        flex-direction: column;
+    }
+    .areaChange .tableChange li {
+        display: flex;
+        width: 100% !important;
+    }
+    .areaChange .tableChange .notificationTitle {
+        line-height: 1.6;
+        min-height: 73px;
+        padding-left: 15px
+    }
+    .areaChange .tableChange .notificationContent {
+        min-height: 73px;
+    }
+    .areaChange .listExample {
+        margin: 0 -10px 24px;
+        width: calc(100% + 20px);
+        padding: 17px 12px 14px;
+    }
+    .areaChange .listExample li {
+        display: flex;
+        justify-content: space-between;
+        font-size: 12px;
+        margin-bottom: 0.8px;
+    }
+    .areaChange .listExample li,
+    .areaChange .listExample li:first-child,
+    .areaChange .listExample li:nth-child(2) {
+        width: 100%;
+    }
+    .areaChange .listExample span {
+        text-align: left;
+        width: 36%;
+    }
+    .areaChange .chageCost .costText {
+        font-size: 17px;
+        padding-left: 8px;
+        text-indent: 8px;
+        line-height: 1.6;
+        margin-bottom: 15px;
+    }
+    .areaChange .chageCost {
+        padding: 0 0;
+    }
+    .areaChange .chageCost .costText:before {
+        left: -1px;
+        width: 13px;
+        height: 13px;
+    }
+    /* areaVoice */
+    .areaVoice .area {
+        padding: 56px 0 127px;
+    }
+    .titleSub {
+        font-size: 22px;
+        margin-left: 6.3%;
+    }
+    .areaVoice .areaTitle {
+        margin-bottom: 22px;
+    }
+    .areaVoice .inner {
+        padding: 0;
+    }
+    .areaVoice .voiceDetails .photoMain {
+        margin-bottom: 54px;
+        transform: translateY(0);
+    }
+    .areaVoice .voiceDetails {
+        margin-top: -89px;
+        padding-bottom: 88px;
+    }
+    .areaVoice .voiceDetails .voiceBox {
+        margin: 0 3.7%;
+        border: 7px solid #c0e9ff;
+        border-radius: 15px;
+        padding: 77px 29px 54px;
+    }
+    .areaVoice .voiceBox .voiceTitle {
+        padding-left: 0;
+        font-size: 22px;
+        margin-bottom: 57px;
+    }
+    .areaVoice .voiceBox .voiceText {
+        font-size: 17px;
+        line-height: 1.94;
+    }
+    .areaVoice .voiceBox .voiceTitle span {
+        margin: 44px -4px 0;
+        font-size: 17px;
+    }
+    .areaVoice .case {
+        font-size: 17px;
+        width: 78px;
+        height: 78px;
+        top: -29px;
+        left: 16px;
+        padding-top: 4px;
+    }
+    .areaVoice .case span {
+        font-size: 50px;
+        margin-top: -22px;
+    }
+    .voiceTitle:before {
+        bottom: -11px;
+        height: 4px;
+        width: 97%;
+    }
+    .voiceTitle:after {
+        width: 57px;
+        bottom: -11px;
+        height: 4px;
+    }
+}
+
+@media (min-width: 769px) {
+    .areaProcedure .location .locationInfor .locationPhone,
+    .areaProcedure .procedurePhone .numberPhone a {
+        pointer-events: none;
+    }
+}

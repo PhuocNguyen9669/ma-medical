@@ -1,0 +1,623 @@
+@charset "utf-8";
+/***************************************************************************
+*
+* DOCTOR LIST STYLE
+*
+***************************************************************************/
+
+/*.areaListDoctor*/
+
+.areaListDoctor {
+    padding-bottom: 153px;
+}
+.areaListDoctor:before {
+    background-image: url("../images/doctor/brg.jpg");
+    height: 380px;
+}
+.areaListDoctor .doctorIntro {
+    padding: 0 0 103px;
+}
+.areaListDoctor .formSearch .formSearchBox {
+    background: #5870c6;
+    padding: 32px 90px 67px;
+    transform: translateY(-95px);
+    border-radius: 24px;
+    border: 8px solid #fff;
+    width: calc(100% + 16px);
+    margin-left: -8px;
+    margin-right: -8px;
+}
+.areaListDoctor .formSearch .formTitle {
+    color: #fff;
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 4px;
+    padding-bottom: 9px;
+    position: relative;
+}
+.areaListDoctor .doctorIntro .areaTitleLead {
+    margin-bottom: 22px;
+}
+.areaListDoctor .txtDoc {
+    font-size: 18px;
+    line-height: 1.9;
+    letter-spacing: 2.9px;
+}
+.doctorIntro .listDoc {}
+.doctorIntro .listDoc li {
+    position: relative;
+    font-size: 18px;
+    line-height: 1.9;
+    letter-spacing: 2.4px;
+    padding-left: 22px;
+}
+.doctorIntro .listDoc li:before {
+    content: "＊";
+    position: absolute;
+    font-size: 18px;
+    font-weight: bold;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+.areaSpecialized .value {
+    word-break: break-all;
+}
+.areaListDoctor .formSearch .formTitle:after {
+    content: "";
+    width: 50px;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+}
+.areaListDoctor .formSearch .formContent {
+    margin-top: 44px;
+}
+.areaListDoctor .formSearch .formContent .formField {
+    display: flex;
+    padding: 0 10px;
+}
+.areaListDoctor .formSearch .formContent .formField+.formField {
+    margin-top: 19px;
+}
+.areaListDoctor .formSearch .formContent .formField .formLabel {
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+    padding-left: 52px;
+    letter-spacing: 4px;
+    width: 235px;
+    margin-top: 9px;
+    margin-right: 20px;
+    position: relative;
+}
+.areaListDoctor .formSearch .formContent .formField .formLabel:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -1px;
+    width: 33px;
+    height: 33px;
+    background: url("../images/doctor/ico-search.svg") no-repeat center center;
+}
+.areaListDoctor .formSearch .formContent .formField .formInput {
+    width: 377px;
+}
+.areaListDoctor .formSearch .formContent .formField .formInput input[type="text"], .areaListDoctor .formSearch .formContent .formField .formInput select {
+    box-shadow: none;
+    -webkit-appearance: none;
+    font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+    color: #666;
+    border: 1px solid #ccc;
+    height: 45px;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 5px 15px;
+}
+.areaListDoctor .formSearch .formContent .formField .formInput input:placeholder {
+    color: #666;
+}
+.areaListDoctor .formSearch .formContent .formField .formInput .formInputText {
+    width: 100%;
+}
+.areaListDoctor .formSearch .formContent .formField .formInput .formInputSelect {
+    width: 100%;
+    background: #fff url("../images/doctor/ico-arrow-down.svg") no-repeat right 12px center/25px 25px;
+}
+.areaListDoctor .formSearch .formContent .formInputSubmit {
+    font-size: 24px;
+    color: #fff;
+    font-weight: bold;
+    background-color: #1133ae;
+    width: 100%;
+    border: none;
+    margin-top: 38px;
+    padding: 14px 0 10px;
+    border-radius: 9px;
+}
+/* MUTI CHECKBOX */
+
+.formSearch .formContent .mutiCheckWrap {
+    position: relative;
+}
+.formSearch .formContent .mutiCheckWrap .mutiCheckbox {
+    width: 100%;
+    height: 245px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background: #FFF;
+    border-radius: 3px;
+    padding: 12px 12px 12px 20px;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    display: none;
+}
+.formSearch .formContent .mutiCheckWrap .mutiCheckbox .listCheckBox {
+    width: 100%;
+    height: 100%;
+    overflow-x: auto;
+}
+.formSearch .formContent .mutiCheckWrap .mutiCheckbox .checkBoxGroup {
+    padding: 10px 0;
+}
+.formSearch .formContent .mutiCheckWrap .mutiCheckbox .checkBoxGroup+.checkBoxGroup {
+    border-top: 1px solid #555;
+}
+.formSearch .formContent .mutiCheckWrap .mutiCheckbox label {
+    display: block;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+.formSearch .formContent .mutiCheckWrap .mutiCheckbox label+label {
+    margin-top: 5px;
+}
+.formSearch .formContent .mutiCheckWrap .mutiCheckbox label input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    margin-right: 15px;
+}
+.formSearch .formContent .mutiCheckWrap .mutiCheckedBox {
+    color: #FFF;
+    font-size: 16px;
+    padding: 0px 7px;
+    margin: 15px 0 5px;
+    display: none;
+}
+.formSearch .formContent .mutiCheckWrap .mutiCheckedBox .checkedLabel {
+    margin-bottom: 3px;
+}
+.formSearch .formContent .mutiCheckWrap .mutiCheckedBox .checkedList {
+    display: flex;
+    flex-wrap: wrap;
+}
+.formSearch .formContent .mutiCheckWrap .mutiCheckedBox .checkedList li {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+.formSearch .formContent .mutiCheckWrap .mutiCheckedBox .checkedList li .removeBtn {
+    display: block;
+    width: 15px;
+    height: 15px;
+    background: url(../images/doctor/remove_icon.svg) no-repeat center center;
+    background-size: 100%;
+    margin-left: 2px;
+}
+.areaListDoctor .formResult {
+    margin-top: -18px;
+}
+.areaListDoctor .formResult .listResult .resultItem {
+    background-color: #fdf8f0;
+    border-top: 1px solid #1133ae;
+    display: flex;
+    padding: 27px 62px 39px;
+}
+.areaListDoctor .formResult .listResult .resultItem+.resultItem {
+    margin-top: 43px;
+}
+.areaListDoctor .formResult .listResult .resultItem .resultLeft {
+    width: 155px;
+    margin-right: 115px;
+    margin-top: 2px;
+}
+.areaListDoctor .formResult .listResult .resultItem .resultLeft .resultNum {
+    width: 155px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.areaListDoctor .formResult .listResult .resultItem .resultLeft .resultNum .numLabel {
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #1133ae;
+    width: 82px;
+    padding: 9px 0 4px 10px;
+    border-radius: 18px 0 0 18px;
+    letter-spacing: 2px;
+}
+.areaListDoctor .formResult .listResult .resultItem .resultLeft .resultNum .numNumber {
+    font-size: 22px;
+    font-weight: bold;
+    background-color: #fff;
+    width: 73px;
+    padding: 3px 0 1px 9px;
+    border-radius: 0 18px 18px 0;
+    letter-spacing: 6px;
+}
+.areaListDoctor .formResult .listResult .resultItem .resultLeft .resultAvatar {
+    text-align: center;
+    margin-top: 17px;
+}
+.areaListDoctor .formResult .listResult .resultItem .resultLeft .resultName {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 6px;
+    margin-top: 9px;
+}
+.areaListDoctor .formResult .listResult .resultItem .resultRight .resultField+.resultField {
+    margin-top: 38px;
+}
+.areaListDoctor .formResult .listResult .resultItem .resultRight .resultField .rFTitle {
+    color: #1133ae;
+    font-size: 18px;
+    font-weight: bold;
+}
+.areaListDoctor .formResult .listResult .resultItem .resultRight .resultField .rFList {
+    margin-top: 14px;
+}
+.areaListDoctor .formResult .listResult .resultItem .resultRight .resultField .rFList li {
+    font-size: 16px;
+    line-height: 1.7;
+    position: relative;
+    padding-left: 20px;
+}
+.areaListDoctor .formResult .listResult .resultItem .resultRight .resultField .rFList li:before {
+    content: "●";
+    font-size: 30px;
+    line-height: 1;
+    position: absolute;
+    left: 0;
+    top: -4px;
+}
+.areaListDoctor .formResult .listResult .resultItem .resultRight .resultField .rFText {
+    font-size: 16px;
+    line-height: 1.75;
+    margin-top: 14px;
+}
+.areaListDoctor .formResult .boxBook {
+    text-align: center;
+    margin-top: 107px;
+}
+.areaListDoctor .formResult .boxBook .titleBook {
+    color: #1433ae;
+    font-size: 30px;
+    line-height: 1.65;
+    letter-spacing: 1px;
+}
+.areaListDoctor .formResult .boxBook .btnBook {
+    margin-top: 24px;
+}
+.areaListDoctor .formResult .boxBook .btnBook a {
+    color: #fff;
+    display: inline-block;
+    background: #f26666;
+    font-size: 32px;
+    font-weight: bold;
+    width: 773px;
+    border-radius: 11px;
+    padding: 12px 0;
+    text-indent: 76px;
+    letter-spacing: 1.5px;
+    position: relative;
+}
+.areaListDoctor .formResult .boxBook .btnBook a:before {
+    content: "";
+    position: absolute;
+    left: 16.2%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 38px;
+    height: 30px;
+    background: url("../images/doctor/ico-check.svg") no-repeat center center/38px 30px;
+}
+/* PC ONLY */
+
+@media (min-width: 769px) {}
+/* FIX TABLET */
+
+@media (max-width: 833px) and (min-width: 769px) {
+    .areaListDoctor .formResult .boxBook .btnBook a {
+        width: 100%;
+    }
+}
+/* STYLE MOBILE */
+
+@media (max-width: 768px) {
+    .areaListDoctor {
+        padding-bottom: 114px;
+    }
+    .areaListDoctor .doctorIntro {
+        padding: 0 0 32px;
+    }
+    .areaListDoctor .inner {
+        padding: 0 5.3%;
+    }
+    .areaListDoctor .formSearch .formSearchBox {
+        transform: translateY(-1px);
+        border-radius: 12px;
+        padding: 19px 20px 21px;
+        border: 4px solid #fff;
+        width: calc(100% + 8px);
+        margin-left: -4px;
+        margin-right: -4px;
+    }
+    .areaListDoctor .formSearch .formTitle {
+        font-size: 20px;
+        letter-spacing: 3.5px;
+    }
+    .areaListDoctor .formSearch .formTitle:after {
+        width: 38.5px;
+    }
+    .areaListDoctor .formSearch .formContent {
+        margin-top: 27px;
+    }
+    .areaListDoctor .formSearch .formContent .formField {
+        display: block;
+        padding: 0;
+    }
+    .areaListDoctor .formSearch .formContent .formField+.formField {
+        margin-top: 16px;
+    }
+    .areaListDoctor .formSearch .formContent .formField .formLabel {
+        font-size: 17.5px;
+        padding-left: 40px;
+        width: 100%;
+        margin-top: 0;
+    }
+    .areaListDoctor .formSearch .formContent .formField .formLabel:before {
+        width: 26px;
+        height: 26px;
+    }
+    .areaListDoctor .formSearch .formContent .formField .formInput {
+        width: 100%;
+        margin-top: 12px;
+    }
+    .areaListDoctor .formSearch .formContent .formField .formInput input[type="text"], .areaListDoctor .formSearch .formContent .formField .formInput select {
+        height: 38px;
+        padding: 3px 13px;
+    }
+    .areaListDoctor .formSearch .formContent .formField .formInput .formInputSelect {
+        background-size: 20px 20px;
+        background-position: right 9px center;
+    }
+    .areaListDoctor .formSearch .formContent .formInputSubmit {
+        font-size: 20px;
+        letter-spacing: 1px;
+        padding: 12.5px 0 9px;
+        border-radius: 5px;
+        margin-top: 27px;
+    }
+    /* MUTI CHECKBOX */
+    .formSearch .formContent .mutiCheckWrap .mutiCheckedBox {
+        font-size: 14px;
+        padding: 0px 3px;
+        margin: 10px 0 30px;
+    }
+    .formSearch .formContent .mutiCheckWrap .mutiCheckedBox .checkedList {
+        width: 106%;
+    }
+    .formSearch .formContent .mutiCheckWrap .mutiCheckedBox .checkedList li {
+        margin-bottom: 3px;
+    }
+    .areaListDoctor .formResult {
+        margin-top: 40px;
+    }
+    .areaListDoctor .formResult .listResult .resultItem {
+        display: block;
+        padding: 37px 25px 30px;
+    }
+    .areaListDoctor .formResult .listResult .resultItem .resultLeft {
+        margin: 0;
+        width: 100%;
+    }
+    .areaListDoctor .formResult .listResult .resultItem+.resultItem {
+        margin-top: 29px;
+    }
+    .areaListDoctor .formResult .listResult .resultItem .resultLeft .resultName {
+        margin-top: 5px;
+    }
+    .areaListDoctor .formResult .listResult .resultItem .resultLeft .resultNum .numNumber {
+        letter-spacing: 2px;
+    }
+    .areaListDoctor .formResult .listResult .resultItem .resultRight {
+        margin-top: 29px;
+    }
+    .areaListDoctor .formResult .listResult .resultItem .resultRight .resultField .rFTitle {
+        font-size: 14px;
+        letter-spacing: 2.6px;
+    }
+    .areaListDoctor .formResult .listResult .resultItem .resultRight .resultField .rFList {
+        margin-top: 3px;
+    }
+    .areaListDoctor .formResult .listResult .resultItem .resultRight .resultField .rFList li {
+        line-height: 1.6;
+        padding-left: 16px;
+    }
+    .areaListDoctor .formResult .listResult .resultItem .resultRight .resultField .rFText {
+        line-height: 1.55;
+        margin-top: 5px;
+    }
+    .areaListDoctor .formResult .listResult .resultItem .resultRight .resultField .rFList li:before {
+        top: -5.5px;
+    }
+    .areaListDoctor .formResult .boxBook {
+        margin-top: 79px;
+    }
+    .areaListDoctor .formResult .boxBook .titleBook {
+        font-size: 20px;
+        line-height: 1.5;
+    }
+    .areaListDoctor .formResult .boxBook .btnBook {
+        margin-top: 21px;
+    }
+    .areaListDoctor .formResult .boxBook .btnBook a {
+        font-size: 20.5px;
+        width: 86%;
+        text-align: center;
+        text-indent: 0;
+        padding: 48px 0 9px;
+    }
+    .areaListDoctor .formResult .boxBook .btnBook a:before {
+        transform: translateX(-50%);
+        left: 50%;
+        top: 9px;
+    }
+    .areaListDoctor .doctorIntro .areaTitleLead {
+        margin-bottom: 20px;
+    }
+    .areaListDoctor .txtDoc {
+        font-size: 15px;
+        letter-spacing: 2.1px;
+    }
+    .doctorIntro .listDoc li {
+        font-size: 15px;
+        letter-spacing: 2.1px;
+    }
+    .doctorIntro .listDoc li:before {
+        top: 4px;
+        line-height: 1;
+        transform: none;
+    }
+}
+/*IE FIX*/
+
+@media all and (-ms-high-contrast: none) {}
+/*IP5*/
+
+@media (max-width: 320px) {}
+/* area Noresult & result */
+
+.areaListDoctor .formSearch.result {
+    color: #fff;
+}
+.areaListDoctor .formSearch.result .textLg {
+    font-size: 34px;
+    margin: 39px 0 28px;
+    padding-left: 5px;
+    letter-spacing: 3.5px;
+}
+.areaListDoctor .formSearch .textSm {
+    font-size: 24px;
+    padding-left: 4px;
+    letter-spacing: 0.1px;
+    margin-bottom: 48px;
+}
+.areaListDoctor .formSearch.result .areaSpecialized {
+    padding-left: 5px;
+}
+.areaListDoctor .formSearch .areaSpecialized li {
+    font-size: 18px;
+    letter-spacing: 3.5px;
+    margin-bottom: 4px;
+}
+.areaListDoctor .formSearch .areaSpecialized li:last-child {
+    margin-bottom: 0;
+}
+.areaListDoctor .formSearch .btnSpecialized {
+    display: block;
+    text-align: center;
+}
+.areaListDoctor .formSearch .btnSpecialized a {
+    display: inline-block;
+    font-size: 24px;
+    color: #fff;
+    font-weight: bold;
+    background-color: #1133ae;
+    width: 100%;
+    border: none;
+    margin-top: 38px;
+    padding: 14px 8px 10px 0px;
+    border-radius: 9px;
+    letter-spacing: 1.5px;
+}
+/*.areaListDoctor Noresult*/
+
+.areaListDoctor .formSearch.noResult {
+    color: #fff;
+}
+.areaListDoctor .formSearch.noResult .textLg {
+    font-size: 34px;
+    margin: 39px 0 3px;
+    padding-left: 5px;
+    letter-spacing: 1px;
+}
+.areaListDoctor .formSearch.noResult .areaSpecialized {
+    padding-left: 5px;
+    margin-bottom: 8px;
+}
+@media (min-width: 769px) {
+    .areaListDoctor .formSearch.noResult .formSearchBox {
+        background: #5870c6;
+        padding: 32px 90px 68px;
+        transform: translateY(-61px);
+        border-radius: 24px;
+    }
+}
+@media (max-width: 768px) {
+    .areaListDoctor:before {
+        background-image: url("../images/doctor/brg-sp.jpg");
+        height: 330px;
+    }
+    .areaListDoctor .formSearch.noResult .areaSpecialized {
+        margin-bottom: 0px;
+    }
+    .areaListDoctor .formSearch .formSearchBox {
+        transform: translateY(-2px);
+        border-radius: 12px;
+        padding: 19px 20px 22px;
+    }
+    /* ListDoctor result */
+    .areaListDoctor .formSearch.result .textLg {
+        font-size: 23px;
+        margin: 22px 0 24px;
+        padding-left: 2px;
+    }
+    .areaListDoctor .formSearch .textSm {
+        font-size: 18px;
+        padding-left: 2px;
+        letter-spacing: 0;
+        margin-bottom: 30px;
+    }
+    .areaListDoctor .formSearch .areaSpecialized li {
+        font-size: 15px;
+        margin-bottom: 10px;
+        line-height: 1.75;
+    }
+    .areaListDoctor .formSearch.result .areaSpecialized {
+        padding-left: 1px;
+    }
+    .areaListDoctor .formSearch .btnSpecialized a {
+        font-size: 20px;
+        margin-top: 38px;
+        padding: 11px 8px 11px 10px;
+        border-radius: 5px;
+        letter-spacing: 1.5px;
+    }
+    /* areaListDoctor Common */
+    .areaListDoctor .formSearch.noResult .textLg {
+        font-size: 23px;
+        margin: 22px 0 3px;
+        padding-left: 2px;
+    }
+}

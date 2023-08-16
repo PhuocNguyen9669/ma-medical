@@ -1,0 +1,121 @@
+@charset "utf-8";
+/***************************************************************************
+*
+* DOCTOR LIST STYLE
+*
+***************************************************************************/
+
+
+
+/*.areaFaq */
+
+.areaFaq {
+	margin-bottom: 167px;
+}
+.areaFaq:before {
+	background-image: url(../images/faq/faq-brg.jpg);
+}
+.listFaq {
+	position: relative;
+	margin-top: 42px;
+}
+.listFaq .itemFaq .question {
+	position: relative;
+	display: flex;
+	padding: 20px 110px 26px 20px;
+	background: #FDF8F0;
+	border-top: 1px solid #1133AE;
+}
+.listFaq .itemFaq .question:before {
+	content: "";
+	position: absolute;
+	background: url(../images/faq/faq-arrows-question.svg) no-repeat top left/ cover;
+	width: 25px;
+    height: 15px;
+    top: 46px;
+    right: 52px;
+	transform: translateY(-50%);
+	transition: 250ms all linear;
+}
+.listFaq .itemFaq .question.changeArrs:before {
+	transform: translateY(-50%) rotate(180deg);
+}
+.listFaq .itemFaq .question .numQ {
+	font-size: 28px;
+	font-weight: bold;
+	color: #1133AE;
+	margin-right: 37px;
+}
+.listFaq .itemFaq .question .titlequestion {
+	color: #555555;
+	font-size: 19px;
+	letter-spacing: 3px;
+	margin-top: 10px;
+}
+.listFaq .itemFaq .anwser {
+	display: flex;
+	background: #fff;
+	padding: 20px 75px 40px 22px;
+}
+.listFaq .itemFaq .anwser.show {
+}
+.listFaq .itemFaq .anwser .iconA {
+	font-size: 28px;
+	font-weight: bold;
+	color: #1133AE;
+	margin-right: 76px;
+}
+.subQuestion {
+	font-size: 16px;
+	font-weight: 500;
+	margin-top: 10px;
+	line-height: 1.75;
+	letter-spacing: 2.4px;
+}
+
+
+@media (max-width: 768px) {
+
+	.areaFaq {
+		margin-bottom: 145px;
+	}
+	.listFaq {
+		margin-top: 35px;
+	}
+	.listFaq .itemFaq .question {
+		flex-direction: column;
+		padding: 20px 22px 25px;
+	}
+	.listFaq .itemFaq .question:before {
+		width: 24px;
+	    height: 14px;
+	    top: 42px;
+	    right: 42px;
+	}
+	.listFaq .itemFaq .question .titlequestion {
+		width: 100%;
+	}
+	.listFaq .itemFaq .anwser {
+		flex-direction: column;	
+		padding: 23px 22px 37px;
+	}
+	.listFaq .itemFaq .question .numQ {
+		font-size: 25px;
+		margin-right: 0;
+	}
+	.listFaq .itemFaq .question .titlequestion {
+		font-size: 17px;
+		margin-top: 5px;
+	}
+
+	.listFaq .itemFaq .anwser .iconA {
+		font-size: 25px;
+		margin-right: 0;
+	}
+	.subQuestion {
+		font-size: 14px;
+		letter-spacing: 1px;
+		text-align: justify;
+		margin-top: 5px;
+	}
+}

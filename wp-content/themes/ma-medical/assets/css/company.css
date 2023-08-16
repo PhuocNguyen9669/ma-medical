@@ -1,0 +1,212 @@
+@charset "utf-8";
+
+/***************************************************************************
+*
+* COMPANY
+*
+***************************************************************************/
+
+.areaCompany {
+    padding-bottom: 207px;
+}
+
+.areaCompany .compMain {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 496px;
+    background: url(../images/company/company-photo.jpg) no-repeat;
+    background-size: cover;
+    text-align: center;
+    margin-bottom: 95px;
+    padding-bottom: 55px;
+}
+
+.areaCompany .compMain .cmainBox .boxTitle {
+    font-size: 38px;
+    color: #1332af;
+    margin-bottom: 45px;
+    letter-spacing: 2px;
+}
+
+.areaCompany .compMain .cmainBox .boxSub {
+    font-size: 26px;
+    font-weight: bold;
+    color: #221816;
+    line-height: 1.7;
+    letter-spacing: 2px;
+}
+
+.areaCompany .compTitle {
+    text-align: center;
+    font-size: 24px;
+    color: #555555;
+    letter-spacing: 4.5px;
+    margin-bottom: 36px;
+}
+
+.areaCompany .compBox {
+    width: 100%;
+    margin-bottom: 55px;
+}
+
+.areaCompany .compBox table {
+    width: 100%;
+    color: #555555;
+}
+
+.areaCompany .compBox table tr {
+    border: 1px solid #d2d2d2;
+    font-size: 16px;
+}
+
+.areaCompany .compBox table th {
+    width: 199px;
+    background-color: #f0f0f0;
+    letter-spacing: 3px;
+    padding: 17px 0px 13px;
+}
+
+.areaCompany .compBox table td {
+    letter-spacing: 1px;
+    line-height: 1.75;
+    padding: 18px 28px 13px;
+}
+
+.areaCompany .compBox table td a {
+    font-weight: 100;
+    color: #555555 !important;
+    font-weight: 400;
+}
+
+.areaCompany .compBox table .subPhone {
+    margin-right: 6px;
+}
+
+.areaCompany .compBox table span {
+    letter-spacing: 2.2px;
+}
+
+.areaCompany .compBox table td .rFList li {
+    position: relative;
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 1px;
+    letter-spacing: 0.8px;
+    padding-left: 17px;
+}
+
+.areaCompany .compBox table td .rFList li:before {
+    content: "●";
+    font-size: 7px;
+    position: absolute;
+    left: 3px;
+    top: 7px;
+}
+
+.areaCompany .compMap iframe {
+    width: 100%;
+    height: 396px;
+}
+
+@media (min-width: 769px) {
+    .subPhone a {
+        pointer-events: none;
+        cursor: default;
+    }
+}
+
+@media (max-width: 768px) {
+    .areaCompany {
+        padding-bottom: 130px;
+    }
+    .areaCompany .inner {
+        padding: 0 4.2%;
+    }
+    .areaCompany .compTitle {
+        font-size: 19px;
+        margin-bottom: 25px;
+    }
+    .areaCompany .compMain {
+        min-height: 334px;
+        margin-bottom: 43px;
+        padding-bottom: 43px;
+        background: url(../images/company/company-photo-sp.jpg) no-repeat;
+        background-size: cover;
+    }
+    .areaCompany .compMain .cmainBox {
+        padding: 0 15px;
+    }
+    .areaCompany .compMain .cmainBox .boxTitle {
+        font-size: 20px;
+        letter-spacing: 1px;
+        margin-bottom: 18px;
+    }
+    .areaCompany .compMain .cmainBox .boxSub{
+        font-size: 14px;
+        letter-spacing: 2.1px;
+        line-height: 2.1;
+    }
+    .areaCompany .compBox {
+        margin-bottom: 33px;
+    }
+    .areaCompany .compBox table tr {
+        width: 100%;
+        text-align: left;
+        font-size: 14px;
+        border: 1px solid #f0f0f0;
+    }
+    .areaCompany .compBox table th,td {
+        width: 100%;
+        display: block;
+    }
+    .areaCompany .compBox table th {
+        padding: 14px 17px 9px;
+        font-size: 16px;
+        font-weight: 100;
+        letter-spacing: 4px;
+    }
+    .areaCompany .compBox table td {
+        padding: 14px 16px 20px;
+        letter-spacing: 0.8px;
+    }
+
+    .areaCompany .compBox table td .rFList li {
+        font-size: 14px;
+        line-height: 1.8;
+        letter-spacing: 1.5px;
+        padding-left: 13px;
+        margin-bottom: 1px;
+    }
+
+    .areaCompany .compBox table td .rFList li:before {
+        top: 6px;
+        left: 1px;
+    }
+    
+    .areaCompany .compBox table .subdot {
+        width: 20px;
+    }
+    .areaCompany .compBox table .subText {
+        width: 90%;
+    }
+    .areaCompany .compBox table span {
+        letter-spacing: 1.8px;
+    }
+
+
+}
+
+@media (max-width: 500px) {
+    .areaCompany .compMap iframe {
+        height: 356px;
+    }
+}
+@media all and (-ms-high-contrast:none) {
+    .areaCompany .compMain .cmainBox {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}

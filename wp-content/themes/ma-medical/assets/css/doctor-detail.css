@@ -1,0 +1,345 @@
+@charset "utf-8";
+/***************************************************************************
+*
+* DOCTOR LIST STYLE
+*
+***************************************************************************/
+
+#main .mainTitle {
+	font-size: 28px;
+	font-weight: bold;
+	color: #1133AE;
+	padding: 100px 0 52px 2px;
+	letter-spacing: 0.2px;
+}
+
+/*.areaDetail */
+
+.areaDetail {
+	margin-top: -43px;
+	margin-bottom: 253px;
+}
+.areaDetail .boxDetail {
+	background: #FDF8F0;
+	border-top: 1px solid #1133AE;
+	padding: 44px 45px 50px;
+	border-radius: 0 0 20px 20px;
+	margin-bottom: 68px;
+}
+.areaDetail .boxDetail .resultNum {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 155px;
+    margin-bottom: 18px;
+    margin-left: 4px;
+    letter-spacing: 4px;
+}
+.areaDetail .boxDetail .resultNum .numLabel {
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #1133ae;
+    width: 82px;
+    padding: 9px 0 4px 10px;
+    border-radius: 18px 0 0 18px;
+    letter-spacing: 2px;
+}
+.areaDetail .boxDetail .resultNum .numNumber {
+    font-size: 22px;
+    font-weight: bold;
+    background-color: #fff;
+    width: 73px;
+    padding: 3px 0 1px 9px;
+    border-radius: 0 18px 18px 0;
+    letter-spacing: 6px;
+}
+.areaDetail .boxDetail .titleDetail {
+	font-size: 34px;
+	font-weight: 600;
+	letter-spacing: 7.1px;
+	margin-bottom: 38px;
+	padding-left: 2px;
+}
+.areaDetail .boxDetail .titleDetail .small {
+	font-size: 22px;
+}
+.areaDetail .boxDetail .boxInfor {
+	display: flex;
+	justify-content: space-between;
+}
+.areaDetail .boxDetail .boxInfor .imageInfor {
+	width: 305px;
+}
+.areaDetail .boxDetail .boxInfor .imageInfor img {
+    width: 100% !important;
+    object-fit: cover;
+}
+.areaDetail .boxDetail .boxInfor .detailInfor {
+	width: calc(100% - 361px);
+    padding-top: 1px;
+}
+.areaDetail .boxDetail .detailInfor .itemInfor {
+	margin-bottom: 50px;
+}
+.areaDetail .boxDetail .itemInfor .titleInfor {
+	background: url(../images/doctor/title-icon.svg) no-repeat top 3px left/ 4px 20px;
+	padding-left: 15px;
+	font-size: 18px;
+	color: #1133AE;
+	letter-spacing: 3.3px;
+}
+.areaDetail .boxDetail .itemInfor .subInfor {
+	font-size: 18px;
+	margin-top: 21px;
+	padding-left: 13px;
+    letter-spacing: 4px;
+}
+.areaDetail .boxDetail .itemInfor .subInfor.sub21 {
+	font-size: 21px;
+	margin-top: 34px;
+}
+.areaDetail .boxDetail .itemInfor {
+	margin-bottom: 70px;
+}
+.areaDetail .boxDetail .itemInfor:last-child {
+	margin-bottom: 0;
+}
+.areaDetail .boxDetail .listInfor {
+	margin-top: 50px;
+}
+.areaDetail .boxDetail .listInfor {}
+.areaDetail .boxDetail .listInfor .rFList {
+    margin-top: 19px;
+    padding-left: 16px;
+}
+.areaDetail .boxDetail .listInfor .rFList li {
+    position: relative;
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 2px;
+    letter-spacing: 3.2px;
+    padding-left: 20px;
+}
+.areaDetail .boxDetail .listInfor .rFList li:before {
+    content: "●";
+    font-size: 30px;
+    line-height: 1;
+    position: absolute;
+    left: 0;
+    top: -4px;
+}
+.areaDetail .boxDetail .itemInfor .subInfor.sub16 {
+	font-size: 16px;
+    margin-top: 19px;
+    padding-left: 17px;
+    letter-spacing: 3.1px;
+    line-height: 1.8;
+}
+
+.areaDetail .boxContent  {
+
+}
+.areaDetail .boxContent .itemContent {
+	margin-bottom: 59px;
+}
+.areaDetail .boxContent .itemContent + .itemContent {
+	margin-bottom: 45px;
+}
+.areaDetail .boxContent .itemContent .titleContent {
+	background: #FDF8F0;
+	font-size: 20px;
+	color: #1133AE;
+	padding: 9px 30px 10px;
+    letter-spacing: 3px;
+}
+.areaDetail .boxContent .itemContent .subContent {
+	font-size: 16px;
+    margin-top: 23px;
+    padding: 0 32px;
+    letter-spacing: 1.9px;
+    line-height: 1.8;
+}
+.areaDetail .boxContent .itemContent .rFList {
+    margin-top: 19px;
+    padding-left: 30px;
+}
+.areaDetail .boxContent .itemContent .rFList li {
+    position: relative;
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 2px;
+    letter-spacing: 3.2px;
+    padding-left: 20px;
+}
+.areaDetail .boxContent .itemContent .rFList li:before {
+    content: "●";
+    font-size: 30px;
+    line-height: 1;
+    position: absolute;
+    left: 0;
+    top: -4px;
+}
+
+.areaDetail .boxContent .itemContent .tableContent {
+	font-size: 17px;
+	margin-top: 17px;
+    padding-left: 30px;
+	text-align: left;
+}
+.areaDetail .boxContent .itemContent .tableContent table {
+	width: 100%;
+}
+.areaDetail .boxContent .itemContent .tableContent table tr {
+	border-bottom: 1px solid #929091;
+}
+.areaDetail .boxContent .itemContent .tableContent table tr th {
+	font-weight: normal;
+	padding: 5px 20px 5px 0;
+	width: 268px;
+	letter-spacing: 4.3px;
+	vertical-align: top;
+}
+.areaDetail .boxContent .itemContent .tableContent table tr td {
+	padding: 5px 0 5px;
+	letter-spacing: 2.7px;
+}
+
+
+@media (max-width: 768px) {
+
+	#main .mainTitle {
+		padding: 57px 0 15px 0px;
+		margin-left: -4px;
+		letter-spacing: 0.1px;
+	}
+	.areaDetail {
+		margin-top: -14px;
+		margin-bottom: 113px;
+	}
+	.areaDetail .boxDetail {
+		padding: 31px 20px;
+		margin-bottom: 72px;
+	}
+	.areaDetail .boxDetail .titleDetail .small {
+		font-size: 16px;
+	}
+	.areaDetail .boxDetail .boxInfor {
+		flex-direction: column;
+	}
+	.areaDetail .boxDetail .boxInfor .imageInfor {
+		width: 100%;
+		padding: 0 41px 0 11px;
+		margin-bottom: 36px;
+	}
+	.areaDetail .boxDetail .boxInfor .detailInfor {
+		width: 100%;
+	}
+	.areaDetail .boxDetail .resultNum {
+		justify-content: flex-start;
+		margin-left: 15px;
+		margin-bottom: 12px;
+	}
+    .areaDetail .boxDetail .resultNum .numNumber {
+        letter-spacing: 2px;
+    }
+    .areaDetail .boxDetail .resultNum .numLabel {
+    	font-size: 12px;
+    	width: 66px;
+    	padding: 8px 0 4px 10px;
+    }
+    .areaDetail .boxDetail .resultNum .numNumber {
+    	font-size: 17px;
+	    width: 57px;
+	    padding: 6px 0 3px 8px;
+
+    }
+    .areaDetail .boxDetail .titleDetail {
+    	font-size: 27px;
+    	letter-spacing: 5.7px;
+    	margin-bottom: 28px;
+    	padding-left: 13px;
+    }
+    .areaDetail .boxDetail .listInfor .rFList {
+        margin-top: 17px;
+        padding-left: 8px;
+    }
+    .areaDetail .boxDetail .listInfor .rFList li {
+    	font-size: 14px;
+        line-height: 1.8;
+        letter-spacing: 1.5px;
+        padding-left: 16px;
+        margin-bottom: 1px;
+    }
+    .areaDetail .boxDetail .listInfor .rFList li:before {
+        top: -5.5px;
+    }
+    .areaDetail .boxDetail .itemInfor .titleInfor {
+    	background-position: top 4px left;
+    	background-size: 4px 17px;
+    	font-size: 16px;
+    	padding-left: 11px;
+    }
+    .areaDetail .boxDetail .itemInfor .subInfor {
+    	font-size: 14px;
+    	margin-top: 22px;
+    	letter-spacing: 2.8px;
+    	padding-left: 10px;
+    }
+    .areaDetail .boxDetail .itemInfor .subInfor.sub21 {
+    	font-size: 18px;
+    	margin-top: 24px;
+    }
+    .areaDetail .boxDetail .detailInfor .itemInfor {
+    	margin-bottom: 43px;
+    }
+    .areaDetail .boxDetail .detailInfor .itemInfor:last-child {
+    	margin-bottom: 0;
+    }
+    .areaDetail .boxDetail .itemInfor {
+    	margin-bottom: 41px;
+    }
+    .areaDetail .boxDetail .itemInfor .subInfor.sub16 {
+    	font-size: 14px;
+    	padding-left: 9px;
+    }
+    .areaDetail .boxContent .itemContent {
+	    margin-bottom: 39px;
+	}
+    .areaDetail .boxContent .itemContent .titleContent {
+    	font-size: 16px;
+    	padding: 7px 10px 8px;
+    }
+    .areaDetail .boxContent .itemContent .subContent {
+    	font-size: 14px;
+	    margin-top: 16px;
+	    padding: 0 11px;
+    }
+
+    .areaDetail .boxContent .itemContent .rFList {
+	    margin-top: 13px;
+	    padding-left: 9px;
+	} 
+	.areaDetail .boxContent .itemContent .rFList li {
+		font-size: 14px;
+	}
+
+	.areaDetail .boxContent .itemContent + .itemContent {
+	    margin-bottom: 27px;
+	}
+	.areaDetail .boxContent .itemContent .tableContent {
+		font-size: 14px;
+		padding-left: 0;
+		margin-top: 11px;
+	}
+	.areaDetail .boxContent .itemContent .tableContent table tr th {
+		display: block;
+		width: 100%;
+		padding: 2px 5px 5px;
+	}
+	.areaDetail .boxContent .itemContent .tableContent table tr td {
+		display: block;
+		padding: 0px 0px 4px 5px;
+    	letter-spacing: 2.9px;
+	}
+}

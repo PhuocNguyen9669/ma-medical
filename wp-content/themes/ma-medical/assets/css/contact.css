@@ -1,0 +1,798 @@
+@charset "utf-8";
+/***************************************************************************
+*
+* CONTACT STYLE
+*
+***************************************************************************/
+#radio-phuoc {
+    font-size: 18px;
+}
+
+#radio-phuoc input {
+    width: 27px;
+    height: 27px;
+    margin-left: -32px;
+}
+
+h3.priTtl {
+    display: inline-flex;
+    margin-left: 70px;
+    margin-top: -8px;
+}
+
+input#radio96 {
+    margin-left: -14px;
+}
+    
+input#your-doctor {
+    display: none;
+}
+
+span#errorText {
+    color: red;
+    font-size: 18px;
+    float: left;
+    position: relative;
+    top: 20px;
+    left: 55px;
+    display: none;
+}
+
+p#note1 {
+    margin-left: 2px;
+}
+
+.note {
+    margin-top: 11px;
+    margin-left: 33px;
+    margin-bottom: 15px;
+}
+.wpcf7-not-valid-tip {
+    margin-top: 10px;
+}
+.wpcf7-spinner {
+    display: block;
+    margin: 10px auto 0;
+}
+.doctorList {
+    display: none;
+}
+.your-doctor-selected {
+    display: none;
+}
+.areaContact {
+    padding-bottom: 153px;
+}
+.areaContact .contactIntro .contactIntroText {
+    font-size: 18px;
+    line-height: 1.9;
+}
+.areaContact .contactIntro .boxBlue {
+    background-color: #1133ae;
+    border-radius: 19px;
+    color: #fff;
+    text-align: center;
+    padding: 26px 0 33px;
+    margin-top: 23px;
+}
+.areaContact .contactIntro .boxBlue .bBTitle {
+    font-size: 24px;
+    letter-spacing: 8.5px;
+}
+.areaContact .contactIntro .boxBlue .bBSub {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    letter-spacing: 3px;
+    position: relative;
+}
+.areaContact .contactIntro .boxBlue .bBSub:before, .areaContact .contactIntro .boxBlue .bBSub:after {
+    content: "";
+    position: absolute;
+    top: 54%;
+    transform: translateY(-50%);
+    left: 96px;
+    width: 187px;
+    height: 1px;
+    background-color: #fff;
+}
+.areaContact .contactIntro .boxBlue .bBSub:after {
+    left: auto;
+    right: 96px;
+}
+.areaContact .contactIntro .boxBlue .boxPhone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 6px;
+}
+.areaContact .contactIntro .boxBlue .boxPhone .phone {
+    margin-right: 30px;
+}
+.areaContact .contactIntro .boxBlue .boxPhone .phone a {
+    color: #fff;
+    font-size: 58px;
+    font-weight: bold;
+    line-height: 1;
+    padding-left: 53px;
+    letter-spacing: 2.7px;
+    position: relative;
+}
+.areaContact .contactIntro .boxBlue .boxPhone .phone a:before {
+    content: "";
+    width: 36px;
+    height: 36px;
+    background: url(../images/common/ico-phone.svg) no-repeat center center;
+    position: absolute;
+    left: 0;
+    bottom: 16px;
+}
+.areaContact .contactIntro .boxBlue .address {
+    font-size: 18px;
+    margin-top: 11px;
+}
+.contactForm {
+    margin-top: 59px;
+}
+.contactForm .contactTitle {
+    color: #1133ae;
+    font-size: 24px;
+    letter-spacing: 0.5px;
+    position: relative;
+}
+.contactForm .contactTitle:after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #1133ae;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+}
+.contactForm .contactTitle span {
+    background-color: #fff;
+    position: relative;
+    z-index: 1;
+    padding-right: 8px;
+}
+.contactForm .contactSub {
+    font-size: 20px;
+    font-weight: normal;
+    color: #000;
+    margin-top: 15px;
+}
+.contactForm .contactThank {
+    display: none;
+    padding-top: 67px;
+}
+.contactForm .contactThank .contactText {
+    font-size: 18px;
+}
+.contactForm .form {
+    margin-top: 64px;
+}
+.contactForm .formField+.formField {
+    margin-top: 24px;
+}
+.contactForm .formField .formLabel {
+    color: #000;
+    font-size: 20px;
+    padding-left: 16px;
+    position: relative;
+}
+.contactForm .formField .formLabel:before {
+    content: "";
+    height: 18px;
+    width: 3px;
+    background: #008ec4;
+    position: absolute;
+    left: 0;
+    top: 5px;
+}
+.contactForm .formField .formLabel .required {
+    color: #fff;
+    background-color: #f26666;
+    width: 35px;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 7px;
+    text-align: center;
+    vertical-align: 3px;
+    margin-left: 21px;
+}
+.contactForm .formField .formInput {
+    margin-top: 6px;
+}
+.contactForm .formField .formInput .inputText, .contactForm .formField .formInput select, .contactForm .formField .formInput .inputTextArea {
+    -webkit-appearance: none;
+    width: 100%;
+    background-color: #e0e0e0;
+    border: none;
+    font-size: 18px;
+    color: #4d4d4d;
+    font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+    height: 48px;
+    border-radius: 4px;
+    padding: 11px 18px 5px;
+}
+.contactForm .formField .formInput .inputTextArea {
+    resize: none;
+    height: 81px;
+}
+.contactForm .formField .formInput .inputTextAreaHight {
+    height: 251px;
+}
+.contactForm .formField .formInput .zipcode {
+    margin-bottom: 16px;
+}
+.contactForm .formField .formInput .zipLabel {
+    color: #4d4d4d;
+    font-size: 18px;
+    margin-right: 6px;
+}
+.contactForm .formField .formInput.checkGuide {
+    background: #e0e0e0;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 27px 23px 50px;
+}
+.contactForm .formField .formInput .guideText {
+    font-size: 18px;
+}
+.contactForm .formField .formInput .inputCheckbox input {
+    width: 27px;
+    height: 27px;
+    border: 1px solid #b5b5b5;
+    border-radius: 50%;
+    vertical-align: -7px;
+    margin-right: 5px;
+}
+.contactForm .formField .formInput .inputTextZip {
+    width: 140px;
+}
+.contactForm .formField .formInput .inputCheckbox {
+    display: block;
+    margin-top: 37px;
+}
+.contactForm .formField .formInput .inputCheckbox .wpcf7-list-item {
+    display: block;
+}
+.contactForm .formField .formInput .inputCheckbox .wpcf7-list-item+.wpcf7-list-item {
+    margin-top: 18px;
+}
+.contactForm .formField .formInput .inputCheckbox .wpcf7-list-item .wpcf7-list-item-label {
+    font-size: 18px;
+}
+
+#note-phuoc .note {
+    margin-left: 0;
+    font-size: 18px;
+}
+
+#radio-id .last {
+    margin-left: -13px;
+}
+
+span#radio-id01 .last {
+    margin-left: -12px;
+}
+
+span#radio-02 .last {
+    margin-left: -13px;
+}
+
+span.inputCheckbox #my_checkbox .wpcf7-list-item .wpcf7-list-item-label {
+    float: right;
+    position: relative;
+    left: -55px;
+}
+
+.contactForm .formField .note {
+    color: #1433ae;
+    font-size: 16px;
+}
+.contactForm .formField .formInput .inputCheckbox .wpcf7-list-item .note {
+    margin-top: 11px;
+    margin-left: 41px;
+}
+.contactForm .selectServices {
+    margin-top: 51px;
+}
+.contactForm .selectServices .formField .formLabel {
+    font-size: 21px;
+}
+.contactForm .selectServices .formField .formLabel .required {
+    margin-left: 16px;
+}
+.contactForm .formField .formInput .inpuTextShort {
+    width: 270px;
+    height: 61px;
+    padding: 7px 18px 6px;
+    background: #e0e0e0 url('../images/contact/ico-select.svg') no-repeat right 26px center/18px 18px;
+}
+.contactForm .inputSubmit {
+    border: none;
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    background: #f26666 url('../images/contact/ico-submit.svg') no-repeat left 123px center/28px 28px;
+    width: 444px;
+    margin: 55px auto 0;
+    display: block;
+    border-radius: 12px;
+    padding: 14px 0;
+    text-indent: 40px;
+}
+.contactForm .formField .formInput .redNote {
+    color: #f26666;
+    font-size: 18px;
+    margin-top: 14px;
+}
+.contactForm .toggleSection {
+    margin-top: 20px;
+    position: relative;
+    z-index: 1;
+}
+.contactForm .toggleSection .togglebutton a {
+    display: block;
+    background-color: #e0e0e0;
+    font-size: 18px;
+    padding: 14px 18px 7px;
+    border-radius: 4px;
+    background: #e0e0e0 url('../images/contact/ico-select.svg') no-repeat left 23.9% center/18px 18px;
+}
+.contactForm .toggleSection .toggleContent {
+    background: #e0e0e0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: auto;
+    height: 246px;
+    border-radius: 7px;
+    padding: 23px 25px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    display: none;
+}
+.contactForm .toggleSection .toggleContent .inputCheckbox {
+    margin-top: 2px;
+    margin-left: -30px;
+}
+.contactForm .toggleSection .toggleContent .inputCheckbox input {
+    width: 16px;
+    height: 16px;
+    vertical-align: -1px;
+    margin-right: 10px;
+}
+.contactForm .toggleSection .toggleContent .inputCheckbox .wpcf7-list-item {
+    display: flex;
+}
+.contactForm .toggleSection .toggleContent .inputCheckbox .wpcf7-list-item .wpcf7-list-item-label {
+    font-size: 16px;
+    letter-spacing: 3.9px;
+}
+.contactForm .toggleSection .toggleContent .inputCheckbox .linkDetail {
+    position: relative;
+    margin-left: 19px;
+}
+.contactForm .toggleSection .toggleContent .inputCheckbox .linkDetail:before {
+    content: "→";
+    vertical-align: 2px;
+}
+.contactForm .toggleSection .toggleContent .inputCheckbox .linkDetail a {
+    font-size: 16px;
+}
+.contactForm .toggleSection .toggleContent .inputCheckbox .linkDetail a:hover {
+    text-decoration: underline;
+}
+.contactForm .toggleSection .toggleContent .inputCheckbox .wpcf7-list-item+.wpcf7-list-item {
+    margin-top: 6px;
+}
+.contactForm .labelOr {
+    font-size: 20px;
+    margin-top: 16px;
+    margin-left: 13px;
+}
+.contactForm .formField .formInput .inputCheckboxBg {
+    background-color: #e0e0e0;
+    border-radius: 4px;
+    padding: 10px 11px 9px;
+    margin-top: 15px;
+}
+.contactForm .boxPrivacy {
+    background-color: #e9f7fb;
+    border-radius: 26px;
+    padding: 54px 49px 68px 44px;
+    margin-top: 48px;
+}
+.contactForm .boxPrivacy .priTtl {
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.6;
+    letter-spacing: 3px;
+    font-weight: normal;
+}
+.contactForm .boxPrivacy .priTtl a {
+    color: #f26666;
+    font-size: 19px;
+}
+.contactForm .boxPrivacy .priStrong {
+    text-align: center;
+    font-size: 23px;
+    font-weight: normal;
+}
+.contactForm .boxPrivacy .priStrong span {
+    padding-bottom: 5px;
+    border-bottom: 1px solid #555;
+}
+.contactForm .boxPrivacy .priContent {
+    background-color: #fff;
+    border-radius: 9px;
+    height: 252px;
+    overflow: auto;
+    padding: 10px 19px;
+    margin-top: 41px;
+}
+.contactForm .boxPrivacy .priContent .priText {
+    line-height: 2;
+    letter-spacing: 2.8px;
+}
+.contactForm .boxPrivacy .formField .formInput .inputCheckbox .wpcf7-list-item {
+    text-align: center;
+    margin: 0;
+}
+.contactForm .boxPrivacy .formField .formInput .inputCheckbox .wpcf7-list-item .wpcf7-list-item-label {
+    color: #000;
+    font-size: 23px;
+    letter-spacing: 1.5px;
+}
+.contactForm .boxPrivacy .formField .formInput .inputCheckbox {
+    margin-top: 62px;
+}
+.contactForm .boxPrivacy .formField .formInput .inputCheckbox input {
+    width: 36px;
+    height: 36px;
+    margin-right: 12px;
+    vertical-align: -10px;
+}
+/*CONFIRM*/
+
+.contactForm .Step2 .formField .formInput .inputText, .contactForm .Step2 .formField .formInput select, .contactForm .Step2 .formField .formInput .inputTextArea {
+    background: transparent;
+}
+.contactForm .Step2 .formField .formInput .guideText, .contactForm .Step2 .formField .formInput .inputCheckbox .wpcf7-list-item .note {
+    display: none;
+}
+.contactForm .Step2 .formField .formInput .inputCheckbox .wpcf7-list-item {
+    margin: 0;
+}
+.contactForm .Step2 .formField .formInput.checkGuide {
+    background: transparent;
+    padding: 11px 18px 5px;
+}
+.contactForm .Step2 .selectServices {
+    margin-top: 24px;
+}
+.contactForm .Step2 .toggleSection {
+    display: none;
+}
+.contactForm .Step2 .labelOr {
+    display: none;
+}
+.contactForm .Step2 .your-recommend-doctor {
+    display: none;
+}
+.contactForm .Step2 .your-doctor-selected {
+    display: block;
+}
+.contactForm .Step2 .redNote {
+    display: none;
+}
+.contactForm .Step2 .formField .note {
+    display: none;
+}
+.contactForm .Step2 .formField .formInput .inputTextArea {
+    height: 97px;
+}
+.contactForm .Step2 .boxPrivacy {
+    display: none;
+}
+.contactForm .Step2 .formField .formInput .inputTextAreaHight {
+    height: auto;
+}
+.contactForm .Step2 .formField .formInput .inputCheckbox input, .contactForm .Step2 .formField .formInput .inputCheckbox .wpcf7-list-item .wpcf7-list-item-label {
+    opacity: 0;
+    position: absolute;
+    z-index: -9999;
+}
+.contactForm .Step2 .formField .formInput .inputCheckbox input:checked~.wpcf7-list-item-label {
+    opacity: 1;
+    position: static;
+    z-index: 1;
+    color: #4d4d4d;
+}
+.contactForm .Step2 .formField .formInput .inputCheckbox, .contactForm .Step2 .formField .formInput .inputCheckbox .wpcf7-list-item+.wpcf7-list-item {
+    margin-top: 0;
+    margin-left: 0;
+}
+.contactForm .Step2 .formField .formInput .inputCheckboxBg {
+    padding: 0;
+}
+.wpcf7-acceptance .wpcf7-list-item>label, .your-recommend-doctor .wpcf7-list-item>label {
+    cursor: pointer;
+}
+/* Change the white to any color */
+
+.contactForm .Step2 input:-webkit-autofill, .contactForm .Step2 input:-webkit-autofill:hover, .contactForm .Step2 input:-webkit-autofill:focus, .contactForm .Step2 input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+    color: #444 !important;
+}
+div.wpcf7 .ajax-loader {
+    margin: 0;
+}
+.boxBtn {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding-bottom: 5px;
+}
+.boxBtn .ajax-loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.contactForm .Step2 .inputSubmit.wpcf7-back {
+    background: #f26666 url(../images/contact/ico-back.svg) no-repeat left 20px center/28px;
+}
+.contactForm .Step2 .inputSubmit.wpcf7-submit {
+    background-position: right 20px center;
+    text-indent: 0;
+}
+.contactForm .Step2 .inputSubmit.wpcf7-submit, .contactForm .Step2 .inputSubmit.wpcf7-back {
+    width: 294px;
+    margin: 0 9px;
+}
+/* PC ONLY */
+
+@media (min-width: 769px) {
+    #main .pageTitle {
+        letter-spacing: 6px;
+    }
+    .areaContact {
+        padding-top: 77px;
+    }
+    .areaContact .contactIntro .boxBlue .phone a {
+        pointer-events: none;
+    }
+    .contactForm .contactThank {
+        width: 780px;
+        margin: 0 auto;
+    }
+    .contactForm .contactThank .contactText {
+        line-height: 1.57;
+    }
+    .contactForm .contactThank .inputSubmit {
+        width: 294px;
+        margin: 100px auto 0;
+        background-position: left 29px center;
+    }
+    #your-services-select .wpcf7-list-item >label:hover,
+    #your-services-select .wpcf7-list-item >label input:hover,
+    .your-doctor-group .wpcf7-list-item >label:hover,
+    .your-doctor-group .wpcf7-list-item >label input:hover,
+    .contactForm .boxPrivacy .formField .formInput .inputCheckbox input:hover{
+        cursor: pointer;
+    }
+    .contactForm .boxPrivacy .priTtl a:hover{
+        text-decoration: underline;
+    }
+}
+@media (max-width: 833px) and (min-width: 769px) {}
+/* STYLE MOBILE */
+
+@media (max-width: 768px) {
+    .areaContact {
+        padding-bottom: 163px;
+    }
+    .areaContact .contactIntro .inner {
+        padding: 0 4.5%;
+    }
+    #main .pageTitle {
+        font-size: 23px;
+        padding: 61px 0 15px 26px;
+    }
+    #main .pageTitle:before {
+        height: 115px;
+        background-image: url('../images/common/main-ttl-border-long.svg');
+    }
+    .areaContact .contactIntro .boxBlue {
+        margin-top: 20px;
+        border-radius: 10px;
+        padding: 20px 0 26px;
+    }
+    .areaContact .contactIntro .contactIntroText {
+        font-size: 15px;
+    }
+    .areaContact .contactIntro .boxBlue .bBTitle {
+        font-size: 20px;
+        letter-spacing: 7px;
+    }
+    .areaContact .contactIntro .boxBlue .bBSub {
+        font-size: 15px;
+        margin-top: 12px;
+    }
+    .areaContact .contactIntro .boxBlue .bBSub:before, .areaContact .contactIntro .boxBlue .bBSub:after {
+        width: 60px;
+        left: 18px;
+    }
+    .areaContact .contactIntro .boxBlue .bBSub:after {
+        left: auto;
+        right: 18px;
+    }
+    .areaContact .contactIntro .boxBlue .boxPhone {
+        display: block;
+        margin-top: 19px;
+    }
+    .areaContact .contactIntro .boxBlue .boxPhone .phone {
+        margin-right: 0;
+    }
+    .areaContact .contactIntro .boxBlue .boxPhone .phone a {
+        font-size: 45px;
+        padding-left: 40px;
+        letter-spacing: 2px;
+    }
+    .areaContact .contactIntro .boxBlue .boxPhone .phone a:before {
+        width: 28px;
+        height: 28px;
+    }
+    .contactForm {
+        margin-top: 45px;
+    }
+    .contactForm .contactTitle {
+        font-size: 15px;
+    }
+    .contactForm .contactTitle span {
+        display: inline-block;
+        padding-right: 13px;
+    }
+    .contactForm .contactTitle:after {
+        top: 56%;
+    }
+    .contactForm .contactSub {
+        font-size: 14px;
+    }
+    .contactForm .form {
+        margin-top: 32px;
+    }
+    .contactForm .formField .formInput {
+        margin-top: 5px;
+    }
+    .contactForm .formField+.formField {
+        margin-top: 19px;
+    }
+    .contactForm .formField .formLabel .required {
+        margin-left: 26px;
+    }
+    .contactForm .formField .formInput .guideText {
+        font-size: 17px;
+    }
+    .contactForm .formField .formInput .inputCheckbox .wpcf7-list-item .wpcf7-list-item-label {
+        font-size: 17px;
+    }
+    .contactForm .formField .note {
+        font-size: 15px;
+    }
+    .contactForm .formField .formInput.checkGuide {
+        padding: 30px 23px 38px;
+    }
+    .contactForm .formField .formInput .inputCheckbox {
+        margin-top: 31px;
+    }
+    .contactForm .formField .formInput .inputCheckbox .wpcf7-list-item+.wpcf7-list-item {
+        margin-top: 26px;
+    }
+    .contactForm .formField .formInput .inputCheckbox .wpcf7-list-item .note {
+        text-indent: -9px;
+        padding-left: 6px;
+        line-height: 1.65;
+    }
+    .contactForm .selectServices {
+        margin-top: 41px;
+    }
+    .contactForm .formField .formInput .redNote {
+        font-size: 15px;
+        margin-top: 5px;
+    }
+    .contactForm .formField .formInput .inputSelect {
+        height: 47px;
+        background: #e0e0e0 url(../images/contact/ico-select.svg) no-repeat right 34px center/25.5px 25.5px;
+    }
+    .contactForm .formField .formInput .inputText, .contactForm .formField .formInput select, .contactForm .formField .formInput .inputTextArea {
+        font-size: 17px;
+    }
+    .contactForm .toggleSection .togglebutton a {
+        background: #e0e0e0 url(../images/contact/ico-select.svg) no-repeat left 62% center/25.5px 25.5px;
+    }
+    .contactForm .formField .formInput .inputCheckboxBg {
+        padding: 9px 22.5px;
+    }
+    .contactForm .formField .formInput .inputCheckboxBg .wpcf7-list-item .wpcf7-list-item-label {
+        display: inline-block;
+        width: calc(100% - 52px);
+        vertical-align: middle;
+    }
+    .contactForm .formField .formInput .inputCheckboxBg .wpcf7-list-item input {
+        margin-right: 19.5px;
+    }
+    .contactForm .toggleSection {
+        margin-top: 13px;
+    }
+    .contactForm .labelOr {
+        font-size: 19px;
+        margin-top: 7px;
+    }
+    .contactForm .boxPrivacy {
+        padding: 28px 22px 68px 25px;
+    }
+    .contactForm .boxPrivacy .priTtl {
+        font-size: 19px;
+        text-align: left;
+        padding-left: 17px;
+    }
+    .contactForm .boxPrivacy .priTtl span {
+        display: block;
+    }
+    .contactForm .boxPrivacy .priTtl span+span {
+        line-height: 0.8;
+    }
+    .contactForm .boxPrivacy .priTtl a {
+        font-size: 18px;
+    }
+    .contactForm .boxPrivacy .priStrong {
+        font-size: 22.5px;
+        text-align: left;
+        margin-top: 16px;
+    }
+    .contactForm .boxPrivacy .priContent {
+        margin-top: 44px;
+        padding: 18px 19px;
+        height: 375px;
+    }
+    .contactForm .boxPrivacy .priContent .priText {
+        line-height: 1.7;
+        letter-spacing: 1.5px;
+    }
+    .contactForm .boxPrivacy .formField .formInput .inputCheckbox .wpcf7-list-item {
+        text-align: left;
+    }
+    .contactForm .boxPrivacy .formField .formInput .inputCheckbox .wpcf7-list-item .wpcf7-list-item-label {
+        font-size: 18px;
+        display: inline-block;
+        width: calc(100% - 52px);
+        vertical-align: middle;
+    }
+    .contactForm .boxPrivacy .formField .formInput .inputCheckbox {
+        margin-top: 26px;
+    }
+    .contactForm .inputSubmit {
+        width: 92%;
+        font-size: 29.5px;
+        margin: 13px auto 0;
+        background-position: left 54px center;
+        padding: 17px 0 11px;
+    }
+    .contactForm .toggleSection .toggleContent .inputCheckbox .wpcf7-list-item {
+        display: block;
+    }
+    .contactForm .toggleSection .toggleContent .inputCheckbox .linkDetail {
+        margin-left: 30px;
+    }
+    .contactForm .toggleSection .toggleContent .inputCheckbox {
+        margin-top: 0;
+    }
+    .contactForm .toggleSection .toggleContent .inputCheckbox .wpcf7-list-item+.wpcf7-list-item {
+        margin-top: 5px;
+    }
+}
