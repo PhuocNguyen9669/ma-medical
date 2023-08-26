@@ -223,134 +223,54 @@ function select_services_shortcode()
 }
 add_shortcode('doctor_list', 'select_services_shortcode');
 
-function doctor_list_custom_form_shortcode()
-{
-    ob_start();
-?>
-    <div class="listResult">
-        <?php
-        // Lặp qua tất cả các bài viết trong post type "doctor"
-        $args = array(
-            'post_type' => 'doctor',
-            'posts_per_page' => POSTS_PER_PAGE,
-            'paged' => get_query_var('paged') ? get_query_var('paged') : 1, // Số trang hiện tại
-            'orderby' => 'date',  // Sắp xếp theo ngày tạo bài viết
-            'order' => 'ASC',
-        );
-        $loop = new WP_Query($args);
-        if ($loop->have_posts()) { ?>
-            <?php
-            while ($loop->have_posts()) {
-                $loop->the_post();
-                // Hiển thị các trường ACF
-            ?>
-                <div class="listResult">
-                    <div class="resultItem">
-                        <div class="resultLeft">
-                            <p class="resultNum">
-                                <span class="numLabel">医師No.</span>
-                                <span class="numNumber"><?php the_field('numerical_order'); ?></span>
-                            </p>
-                            <?php
-                            $gender = get_field('image_doctor'); // Lấy giá trị của trường ACF Radio Button
-                            $image_src = ''; // Biến lưu trữ đường dẫn ảnh
-                            if ($gender === 'Male') {
-                                $image_src = get_template_directory_uri() . '/assets/images/doctor/ava-men.jpg';; // Đường dẫn ảnh nam
-                            } elseif ($gender === 'Female') {
-                                $image_src = get_template_directory_uri() . '/assets/images/doctor/ava-women.jpg';
-                            }
-
-                            if (!empty($image_src)) {
-                            ?>
-                                <p class="resultAvatar">
-                                    <a href="<?= get_the_permalink(get_the_ID()); ?>">
-                                        <img src="<?php echo $image_src; ?>" alt="">
-                                    </a>
-                                </p>
-                            <?php } else {
-                                // Hiển thị một hình ảnh mặc định nếu không có đường dẫn ảnh tương ứng
-                            ?>
-                            <?php } ?>
-
-                            <?php
-                            $display_value = get_field('doctor_name'); // Thay thế your_field_name bằng tên của trường Select trong ACF của bạn
-                            ?>
-                            <p class="resultName"><?= $display_value;
-                                                    the_field('name'); ?></p>
-                        </div>
-                        <div class="resultRight">
-                            <div class="resultField">
-                                <h3 class="rFTitle">専門分野</h3>
-                                <ul class="rFList">
-                                    <?php if (have_rows('specialized_field')) : ?>
-                                        <?php while (have_rows('specialized_field')) : the_row(); ?>
-                                            <li><?php the_sub_field('specialty'); ?></li>
-                                        <?php endwhile; ?>
-                                    <?php endif; ?>
-                                </ul>
-                            </div>
-                            <div class="resultField">
-                                <h3 class="rFTitle">資格・受賞歴</h3>
-                                <p class="rFText"><?php the_field('qualifications_awards'); ?></p>
-                            </div>
-                            <div class="resultField">
-                                <h3 class="rFTitle">経験年数・経歴など</h3>
-                                <p class="rFText"><?php the_field('years_of_experience'); ?></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-        <?php
-            }
-        }
-        // Khôi phục dữ liệu bài viết gốc
-        wp_reset_postdata();
-        ?>
-        <div class="pagingNav hira">
-            <ul class="pagi_nav_list">
-                <?php
-                // Lấy số trang hiện tại
-                $paged = get_query_var('paged') ? get_query_var('paged') : 1;
-                // Lấy số trang tối đa
-                $max_pages = $loop->max_num_pages;
-                // Hiển thị thẻ li trang đầu tiên
-                if ($paged > 1) {
-                    echo '<li class="p-control"><a href="' . get_pagenum_link(1) . '">表紙></li>';
-                }
-                // Hiển thị thẻ li trang trước
-                if ($paged > 1) {
-                    echo '<li class="p-control prev"><a href="' . get_pagenum_link($paged - 1) . '">前</a></li>';
-                }
-                // Hiển thị các nút phân trang
-                for ($i = 1; $i <= $max_pages; $i++) {
-                    if ($i == $paged) {
-                        echo '<li class="active"><a href="' . get_pagenum_link($i) . '">' . $i . '</a></li>';
-                    } else {
-                        echo '<li><a href="' . get_pagenum_link($i) . '">' . $i . '</a></li>';
-                    }
-                }
-                // Hiển thị thẻ li trang kế tiếp
-                if ($paged < $max_pages) {
-                    echo '<li class="p-control prev"><a href="' . get_pagenum_link($paged + 1) . '">次へ</a></li>';
-                }
-                // Hiển thị thẻ li trang cuối cùng
-                if ($paged < $max_pages) {
-                    echo '<li class="p-control next"><a href="<' . get_pagenum_link($max_pages) . '">最後</a></li>';
-                } ?>
-
-
-            </ul>
-        </div>
-    </div>
-<?php
-
-    return ob_get_clean();
-}
-add_shortcode('result_doctor_list', 'doctor_list_custom_form_shortcode');
-
 add_filter('wpcf7_form_elements', 'mycustom_wpcf7_form_elements');
 function mycustom_wpcf7_form_elements($form)
 {
     $form = do_shortcode($form);
     return $form;
+}
+
+
+function custom_pagination($post_query = null)
+{
+    global $wp_query;
+    if(isset($post_querys) && $post_query) {
+        $post_query = $wp_query;
+    }
+    $paged = get_query_var('paged') ? get_query_var('paged') : 1;
+    $max_pages = $post_query->max_num_pages;
+
+    ob_start();
+    ?>
+    <div class="pagingNav hira">
+        <ul class="pagi_nav_list">
+            <?php
+            if ($paged > 1) {
+                echo '<li class="p-control"><a href="' . get_pagenum_link(1) . '">表紙></li>';
+            }
+
+            if ($paged > 1) {
+                echo '<li class="p-control prev"><a href="' . get_pagenum_link($paged - 1) . '">前</a></li>';
+            }
+
+            for ($i = 1; $i <= $max_pages; $i++) {
+                if ($i == $paged) {
+                    echo '<li class="active"><a href="' . get_pagenum_link($i) . '">' . $i . '</a></li>';
+                } else {
+                    echo '<li><a href="' . get_pagenum_link($i) . '">' . $i . '</a></li>';
+                }
+            }
+
+            if ($paged < $max_pages) {
+                echo '<li class="p-control prev"><a href="' . get_pagenum_link($paged + 1) . '">次へ</a></li>';
+            }
+
+            if ($paged < $max_pages) {
+                echo '<li class="p-control next"><a href="' . get_pagenum_link($max_pages) . '">最後</a></li>';
+            }
+            ?>
+        </ul>
+    </div>
+    <?php
+    return ob_get_clean();
 }

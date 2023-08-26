@@ -26,7 +26,6 @@
             </div>
         </div>
         <!-- .doctorIntro -->
-
         <!-- .formSearch -->
         <div class="formResult">
             <div class="inner">
@@ -94,7 +93,6 @@
                         </div>
                     </div>
                     <?php while ($search_query->have_posts()) : $search_query->the_post(); ?>
-                        <!-- HTML LOOP -->
                         <div class="listResult">
                             <div class="resultItem">
                                 <div class="resultLeft">
@@ -103,8 +101,8 @@
                                         <span class="numNumber"><?php the_field('numerical_order'); ?></span>
                                     </p>
                                     <?php
-                                    $gender = get_field('image_doctor'); // Lấy giá trị của trường ACF Radio Button
-                                    $image_src = ''; // Biến lưu trữ đường dẫn ảnh
+                                    $gender = get_field('image_doctor'); 
+                                    $image_src = '';
                                     if ($gender === 'Male') {
                                         $image_src = get_template_directory_uri() . '/assets/images/doctor/ava-men.jpg';; // Đường dẫn ảnh nam
                                     } elseif ($gender === 'Female') {
@@ -119,11 +117,11 @@
                                         </p>
                                     <?php } ?>
                                     <?php
-                                    $field_key = 'group_64cdeba6637a2'; // Thay thế field_1234567890 bằng key của trường Select trong ACF của bạn
-                                    $display_value = get_field('doctor_name'); // Thay thế your_field_name bằng tên của trường Select trong ACF của bạn
+                                    $field_key = 'group_64cdeba6637a2'; 
+                                    $display_value = get_field('doctor_name');
                                     ?>
                                     <p class="resultName"><?= $display_value;
-                                                            the_field('name'); ?></p>
+                                        the_field('name'); ?></p>
                                 </div>
                                 <div class="resultRight">
                                     <div class="resultField">
@@ -148,41 +146,8 @@
                             </div>
                         </div>
                     <?php endwhile; ?>
-                    <!-- HTML PAGI -->
-                    <div class="pagingNav hira">
-                        <ul class="pagi_nav_list">
-                            <?php
-                            // Lấy số trang hiện tại
-                            $paged = get_query_var('paged') ? get_query_var('paged') : 1;
-                            // Lấy số trang tối đa
-                            $max_pages = $search_query->max_num_pages;
-                            // Hiển thị thẻ li trang đầu tiên
-                            if ($paged > 1) {
-                                echo '<li class="p-control"><a href="' . get_pagenum_link(1) . '">表紙></li>';
-                            }
-                            // Hiển thị thẻ li trang trước
-                            if ($paged > 1) {
-                                echo '<li class="p-control prev"><a href="' . get_pagenum_link($paged - 1) . '">前</a></li>';
-                            }
-                            // Hiển thị các nút phân trang
-                            for ($i = 1; $i <= $max_pages; $i++) {
-                                if ($i == $paged) {
-                                    echo '<li class="active"><a href="' . get_pagenum_link($i) . '">' . $i . '</a></li>';
-                                } else {
-                                    echo '<li><a href="' . get_pagenum_link($i) . '">' . $i . '</a></li>';
-                                }
-                            }
-                            // Hiển thị thẻ li trang kế tiếp
-                            if ($paged < $max_pages) {
-                                echo '<li class="p-control prev"><a href="' . get_pagenum_link($paged + 1) . '">次へ</a></li>';
-                            }
-                            // Hiển thị thẻ li trang cuối cùng
-                            if ($paged < $max_pages) {
-                                echo '<li class="p-control next"><a href="<' . get_pagenum_link($max_pages) . '">最後</a></li>';
-                            } ?>
-                        </ul>
-                    </div>
-                <?php else : ?>
+                    <?php echo custom_pagination($search_query); ?>
+                <?php else : ?> 
                     <div class="formSearch noResult">
                         <div class="inner">
                             <div class="formSearchBox">
