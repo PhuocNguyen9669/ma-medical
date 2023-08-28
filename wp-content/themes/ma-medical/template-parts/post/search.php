@@ -1,7 +1,53 @@
 <?php global $theme_uri; ?>
 <?php
+    $searchTax = isset($_GET['tax']) ? $_GET['tax'] : '';
+    $searchKey = isset($_GET['s']) ? $_GET['s'] : '';
+    if ($searchTax || $searchKey) {
+        $args = array(
+            'post_type'      => 'doctor',
+            'posts_per_page' => POSTS_PER_PAGE,
+            'paged'          => get_query_var('paged') ? get_query_var('paged') : 1,
+            'post_status'    => 'publish',
+            'order'          => 'ASC',
+        );
+    }
+    if ($searchTax) {
+        $args['tax_query'] = array(
+            array(
+                'taxonomy' => 'specialized-field',
+                'field'    => 'slug',
+                'terms'    => $searchTax,
+            ),
+        );
+    }
 
-?>
+    if ($searchKey) {
+        $args['meta_query'] = array(
+            'relation' => 'OR',
+            array(
+                'key'     => 'numerical_order',
+                'value'   => $searchKey,
+                'compare' => 'LIKE',
+            ),
+            array(
+                'key'     => 'organization',
+                'value'   => $searchKey,
+                'compare' => 'LIKE',
+            ),
+            array(
+                'key'     => 'qualifications_awards',
+                'value'   => $searchKey,
+                'compare' => 'LIKE',
+            ),
+            array(
+                'key'     => 'self-introduce',
+                'value'   => $searchKey,
+                'compare' => 'LIKE',
+            ),
+        );
+    }
+    $search_query = new WP_Query($args);
+    $found_posts = $search_query->found_posts; ?>
 <?php get_header(); ?>
 <!-- #header -->
 <?php get_template_part('template-parts/page/page', 'breadcrum') ?>
@@ -30,54 +76,6 @@
         <div class="formResult">
             <div class="inner">
                 <?php
-                $searchTax = isset($_GET['tax']) ? $_GET['tax'] : '';
-                $searchKey = isset($_GET['s']) ? $_GET['s'] : '';
-                if ($searchTax || $searchKey) {
-                    $args = array(
-                        'post_type'      => 'doctor',
-                        'posts_per_page' => POSTS_PER_PAGE,
-                        'paged'          => get_query_var('paged') ? get_query_var('paged') : 1,
-                        'post_status'    => 'publish',
-                        'order'          => 'ASC',
-                    );
-                }
-                if ($searchTax) {
-                    $args['tax_query'] = array(
-                        array(
-                            'taxonomy' => 'specialized-field',
-                            'field'    => 'slug',
-                            'terms'    => $searchTax,
-                        ),
-                    );
-                }
-
-                if ($searchKey) {
-                    $args['meta_query'] = array(
-                        'relation' => 'OR',
-                        array(
-                            'key'     => 'numerical_order',
-                            'value'   => $searchKey,
-                            'compare' => 'LIKE',
-                        ),
-                        array(
-                            'key'     => 'organization',
-                            'value'   => $searchKey,
-                            'compare' => 'LIKE',
-                        ),
-                        array(
-                            'key'     => 'qualifications_awards',
-                            'value'   => $searchKey,
-                            'compare' => 'LIKE',
-                        ),
-                        array(
-                            'key'     => 'self-introduce',
-                            'value'   => $searchKey,
-                            'compare' => 'LIKE',
-                        ),
-                    );
-                }
-                $search_query = new WP_Query($args);
-                $found_posts = $search_query->found_posts;
                 if ($search_query->have_posts() && $found_posts > 0) : ?>
                     <div class="formSearch result">
                         <div class="inner">

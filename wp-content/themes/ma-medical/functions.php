@@ -65,7 +65,7 @@ function ma_medical_theme_register_styles()
 function create_doctor_post_type()
 {
     $labels = array(
-        'name' => 'Doctors', // Tên hiển thị của post type trong trang quản lý
+        'name' => 'Doctors',
         'singular_name' => 'Doctor', // Tên số ít của post type
     );
 
@@ -73,8 +73,6 @@ function create_doctor_post_type()
         'labels' => $labels,
         'public' => true, // Cho phép truy cập công khai
         'has_archive' => true, // Cho phép tạo trang lưu trữ
-        // 'supports' => array('title', 'editor', 'thumbnail', 'tags'), // Các tính năng được hỗ trợ, bao gồm cả 'tags'
-        // 'taxonomies' => array('category', 'post_tag'), // Thuế (taxonomy) sử dụng cho tags
     );
 
     register_post_type('doctor', $args);
@@ -218,7 +216,7 @@ function select_services_shortcode()
             </div>
         </div>
     </div>
-<?php
+    <?php
     return ob_get_clean();
 }
 add_shortcode('doctor_list', 'select_services_shortcode');
@@ -230,47 +228,92 @@ function mycustom_wpcf7_form_elements($form)
     return $form;
 }
 
-
+// Post content pagination function
 function custom_pagination($post_query = null)
 {
     global $wp_query;
-    if(isset($post_querys) && $post_query) {
+    if (isset($post_querys) && $post_query) {
         $post_query = $wp_query;
     }
     $paged = get_query_var('paged') ? get_query_var('paged') : 1;
     $max_pages = $post_query->max_num_pages;
-
-    ob_start();
+    if ($max_pages > 1) {
     ?>
-    <div class="pagingNav hira">
-        <ul class="pagi_nav_list">
-            <?php
-            if ($paged > 1) {
-                echo '<li class="p-control"><a href="' . get_pagenum_link(1) . '">表紙></li>';
-            }
-
-            if ($paged > 1) {
-                echo '<li class="p-control prev"><a href="' . get_pagenum_link($paged - 1) . '">前</a></li>';
-            }
-
-            for ($i = 1; $i <= $max_pages; $i++) {
-                if ($i == $paged) {
-                    echo '<li class="active"><a href="' . get_pagenum_link($i) . '">' . $i . '</a></li>';
-                } else {
-                    echo '<li><a href="' . get_pagenum_link($i) . '">' . $i . '</a></li>';
+        <div class="pagingNav hira">
+            <ul class="pagi_nav_list">
+                <?php
+                if ($paged > 1) {
+                    echo '<li class="p-control"><a href="' . get_pagenum_link(1) . '">表紙></li>';
                 }
-            }
+                if ($paged > 1) {
+                    echo '<li class="p-control prev"><a href="' . get_pagenum_link($paged - 1) . '">前</a></li>';
+                }
+                for ($i = 1; $i <= $max_pages; $i++) {
+                    if ($i == $paged) {
+                        echo '<li class="active"><a href="' . get_pagenum_link($i) . '">' . $i . '</a></li>';
+                    } else {
+                        echo '<li><a href="' . get_pagenum_link($i) . '">' . $i . '</a></li>';
+                    }
+                }
+                if ($paged < $max_pages) {
+                    echo '<li class="p-control prev"><a href="' . get_pagenum_link($paged + 1) . '">次へ</a></li>';
+                }
+                if ($paged < $max_pages) {
+                    echo '<li class="p-control next"><a href="' . get_pagenum_link($max_pages) . '">最後</a></li>';
+                }
+                ?>
+            </ul>
+        </div>
+    <?php } ?>
+<?php
+}
 
-            if ($paged < $max_pages) {
-                echo '<li class="p-control prev"><a href="' . get_pagenum_link($paged + 1) . '">次へ</a></li>';
-            }
+//Search function by taxonomy and keywords of fields
+function search_doctors($searchKey, $searchTax)
+{
+    $args = array(
+        'post_type'      => 'doctor',
+        'posts_per_page' => POSTS_PER_PAGE,
+        'paged'          => get_query_var('paged') ? get_query_var('paged') : 1,
+        'post_status'    => 'publish',
+        'order'          => 'DESC',
+    );
 
-            if ($paged < $max_pages) {
-                echo '<li class="p-control next"><a href="' . get_pagenum_link($max_pages) . '">最後</a></li>';
-            }
-            ?>
-        </ul>
-    </div>
-    <?php
-    return ob_get_clean();
+    if ($searchTax) {
+        $args['tax_query'] = array(
+            array(
+                'taxonomy' => 'specialized-field',
+                'field'    => 'slug',
+                'terms'    => $searchTax,
+            ),
+        );
+    }
+
+    if ($searchKey) {
+        $args['meta_query'] = array(
+            'relation' => 'OR',
+            array(
+                'key'     => 'numerical_order',
+                'value'   => $searchKey,
+                'compare' => 'LIKE',
+            ),
+            array(
+                'key'     => 'organization',
+                'value'   => $searchKey,
+                'compare' => 'LIKE',
+            ),
+            array(
+                'key'     => 'qualifications_awards',
+                'value'   => $searchKey,
+                'compare' => 'LIKE',
+            ),
+            array(
+                'key'     => 'self-introduce',
+                'value'   => $searchKey,
+                'compare' => 'LIKE',
+            ),
+        );
+    }
+    $search_query = new WP_Query($args);
+    return $search_query;
 }
