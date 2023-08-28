@@ -4,7 +4,7 @@
 <head>
     <meta name="viewport" content="width=device-width">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title><?php the_title(); ?></title>
+    <title><?php the_title() ?></title>
     <meta name="description" content=" content " />
     <meta name="keywords" content=" content " />
     <meta name="author" content=" content " />
